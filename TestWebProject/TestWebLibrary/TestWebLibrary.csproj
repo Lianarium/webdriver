@@ -56,9 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Browser\BrowserFactory.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="PageObjects\ActivityPage.cs" />
+    <Compile Include="PageObjects\BasePage.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\IssuesPage.cs" />
     <Compile Include="PageObjects\LogInPage.cs" />
+    <Compile Include="PageObjects\NewIssuePage.cs" />
+    <Compile Include="PageObjects\NewProjectPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

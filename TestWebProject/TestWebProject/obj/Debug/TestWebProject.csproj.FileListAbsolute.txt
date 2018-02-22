@@ -31,3 +31,4 @@ C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\Test
 C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\WebDriver.xml
 C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\WebDriver.Support.xml
 C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\nunit.framework.xml
+C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\Log.txt

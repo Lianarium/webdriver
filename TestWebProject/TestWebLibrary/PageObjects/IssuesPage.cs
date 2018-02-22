@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestWebLibrary
+namespace TestWebLibrary.PageObjects
 {
-    public class Class1
-    {
-
-    }
+	class IssuesPage
+	{
+	}
 }
