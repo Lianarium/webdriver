@@ -56,7 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Browser\BrowserFactory.cs" />
+    <Compile Include="Browser\Browser.cs" />
+    <Compile Include="Utils\ConfigManager.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="PageObjects\ActivityPage.cs" />
     <Compile Include="PageObjects\BasePage.cs" />

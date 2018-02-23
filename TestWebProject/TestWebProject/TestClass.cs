@@ -12,6 +12,7 @@ using System.Configuration;
 using TestWebProject;
 using NUnit.Framework;
 using TestWebLibrary.PageObjects;
+using TestWebLibrary.Utils;
 
 namespace TestWebProject
 {
@@ -21,12 +22,11 @@ namespace TestWebProject
 
 		public IWebDriver Driver { get; set; }
 		public WebDriverWait Wait { get; set; }
-		private string configValue = ConfigurationSettings.AppSettings["browser"];
-
+	    
 	    [OneTimeSetUp]
 		public void SetupTest()
 		{
-			if ("ff".Equals(this.configValue))
+			if ("ff".Equals(ConfigManager.configBrowser))
 			{
 				var service = FirefoxDriverService.CreateDefaultService();
 				this.Driver = new FirefoxDriver(service);
@@ -56,12 +56,11 @@ namespace TestWebProject
 		{
 			LogInPage loginpage = new LogInPage(this.Driver);
 			loginpage.GoToLogInPage();
-		 	loginpage.FillLoginField("alyapine");
-			loginpage.FillPasswordField("3psdpsdpsd3");
-			loginpage.ClickToLogIn();
-			HomePage homepage = new HomePage(this.Driver);
+		 	loginpage.FillLoginField(ConfigManager.configLogin);
+			loginpage.FillPasswordField(ConfigManager.configPassword);
+
+			HomePage homepage = loginpage.ClickToLogIn();
 			homepage.ValidateHomePage();
-			homepage.GoToHomePage();
 			homepage.ClickprojectsLink();
 			homepage.CreateNewProject();
 			

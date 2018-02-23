@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	class ActivityPage
+	public class ActivityPage : BasePage
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/activity";

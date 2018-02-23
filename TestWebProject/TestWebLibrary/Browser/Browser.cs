@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.Browser
 {
-	class BrowserFactory
+	class Browser
 	{
 		 
 		private static IWebDriver driver;

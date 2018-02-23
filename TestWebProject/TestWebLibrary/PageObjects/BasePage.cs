@@ -15,12 +15,12 @@ namespace TestWebLibrary.PageObjects
 
 		public BasePage( )
 		{
-			 
+			  
 		}
 
-		public void isElementVisible(By element, int timeoutSecs = 10)
-		{
-			new WebDriverWait(this.driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
+		public void isElementVisible(IWebDriver driver,By element, int timeoutSecs = 10)
+		{ 
+			new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
 		}
 	}
 }

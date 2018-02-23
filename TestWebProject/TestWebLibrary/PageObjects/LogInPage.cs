@@ -11,14 +11,15 @@ using System.Configuration;
 using OpenQA.Selenium.Support.PageObjects;
 using NUnit.Framework;
 using TestWebLibrary.PageObjects;
+using TestWebLibrary.Utils;
 
 namespace TestWebProject
 {
 	 
-	public class LogInPage 
+	public class LogInPage : BasePage
 	{
 		private IWebDriver driver;
-		private string baseUrl = ConfigurationSettings.AppSettings["startURL"];
+		private string baseUrl = ConfigManager.configUrl;
 		private By loginfield = By.Id("username");
 		private By passwordfield = By.Id("password");
 		private By loginbutton = By.Name("login");
@@ -43,30 +44,25 @@ namespace TestWebProject
 
 		public void FillLoginField(string login)
 		{
-			isElementVisible(loginfield);
+			isElementVisible(this.driver, loginfield);
 			this.driver.FindElement(loginfield).Click(); 
-			this.driver.FindElement(loginfield).SendKeys("alyapine");//remove harcode!
+			this.driver.FindElement(loginfield).SendKeys(login); 
 		}
 
 		public void FillPasswordField(string password)
 		{
-			isElementVisible(passwordfield);
+			isElementVisible(this.driver, passwordfield);
 			this.driver.FindElement(passwordfield).Click(); 
-			this.driver.FindElement(passwordfield).SendKeys("3psdpsdpsd3");//remove harcode!
+			this.driver.FindElement(passwordfield).SendKeys(password); 
 		}
 
-		public void ClickToLogIn()
+		public HomePage ClickToLogIn()
 		{
-			isElementVisible(loginbutton);
+			isElementVisible(this.driver, loginbutton);
 			this.driver.FindElement(loginbutton).Click();
-		 
+		    return new HomePage(driver);//go to homepage
 		}
 
 		
-
-		public void isElementVisible(By element, int timeoutSecs = 10)
-		{
-			new WebDriverWait(this.driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
-		}
 	}
 }

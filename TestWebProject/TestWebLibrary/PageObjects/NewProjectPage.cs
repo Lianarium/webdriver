@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	class NewProjectPage
+	class NewProjectPage : BasePage
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/projects/new";
@@ -34,14 +34,14 @@ namespace TestWebLibrary.PageObjects
 
 		public void EnterProjectName()
 		{
-			isElementVisible(namefield);
+			isElementVisible(this.driver, namefield);
 			this.driver.FindElement(namefield).Click();
 			this.driver.FindElement(namefield).SendKeys("Project1");//remove harcode!
 		}
 
 		public void EnterProjectIdentifier()
 		{
-			isElementVisible(identifierfield);
+			isElementVisible(this.driver, identifierfield);
 			this.driver.FindElement(identifierfield).Click();
 			this.driver.FindElement(identifierfield).SendKeys("some_identifier");//remove harcode!
 		}
@@ -49,21 +49,18 @@ namespace TestWebLibrary.PageObjects
 
 		public void Create()
 		{
-			isElementVisible(createbutton);
+			isElementVisible(this.driver, createbutton);
 			this.driver.FindElement(createbutton).Click();
 		}
 
 		public void CreateAndContinue()
 		{
-			isElementVisible(createandcontinuebutton);
+			isElementVisible(this.driver, createandcontinuebutton);
 			this.driver.FindElement(createandcontinuebutton).Click();
 		}
 
 		 
 
-		public void isElementVisible(By element, int timeoutSecs = 10)
-		{
-			new WebDriverWait(this.driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
-		}
+		 
 	}
 }

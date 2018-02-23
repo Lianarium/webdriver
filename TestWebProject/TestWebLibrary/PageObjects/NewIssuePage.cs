@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	public class NewIssuePage
+	public class NewIssuePage : BasePage
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/issues/new";
@@ -34,32 +34,32 @@ namespace TestWebLibrary.PageObjects
 
 		public void ChooseProject()
 		{
-			isElementVisible(issueprojectelement);
+			isElementVisible(this.driver, issueprojectelement);
 			this.driver.FindElement(issueprojectelement).Click();
 		}
 
 		public void CreateTracker()
 		{
-			isElementVisible(trackerelement);
+			isElementVisible(this.driver, trackerelement);
 			this.driver.FindElement(trackerelement).Click();
 		}
 
 		public void EnterSubject()
 		{
-			isElementVisible(issuesubjectfield);
+			isElementVisible(this.driver, issuesubjectfield);
 			this.driver.FindElement(issuesubjectfield).Click();
 			this.driver.FindElement(issuesubjectfield).SendKeys("some_subject");//remove harcode!
 		}
 
 		public void ChooseIssueStatus()
 		{
-			isElementVisible(issuestatus);
+			isElementVisible(this.driver, issuestatus);
 			this.driver.FindElement(issuestatus).Click();
 		}
 
 		public void ChooseIssuePriority()
 		{
-			isElementVisible(issuepriority);
+			isElementVisible(this.driver, issuepriority);
 			this.driver.FindElement(issuepriority).Click();
 		}
 
@@ -70,10 +70,6 @@ namespace TestWebLibrary.PageObjects
 			Assert.AreEqual(2, 2);
 		}
 
-
-		public void isElementVisible(By element, int timeoutSecs = 10)
-		{
-			new WebDriverWait(this.driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
-		}
+ 
 	}
 }
