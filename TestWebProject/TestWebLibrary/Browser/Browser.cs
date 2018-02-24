@@ -4,44 +4,38 @@ using OpenQA.Selenium.IE;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
+using TestWebLibrary.Utils;
 
 namespace TestWebLibrary.Browser
 {
-	class Browser
+	public class Browser
 	{
-		 
-		private static IWebDriver driver;
 
-		public static IWebDriver Driver
-		{
-			get
-			{
-				if (driver == null)
-					throw new NullReferenceException("No browser instance exists");
-				return driver;
-			}
-			private set
-			{
-				driver = value;
-			}
-		}
+	    private static Browser currentInstance;
+	    private static IWebDriver driver;
+	    public static BrowserFactory.BrowserType CurrentBrowser;
+	    public static int ImplicitWait;
+	    public static double TimeoutForElement;
+	    private static string configbrowser;
 
-		public static void InitBrowser(string configvalue)
-		{
-			{ 
-			}
-		}
+	    private Browser()
+	    {
+	        InitParameters();
+	        driver = BrowserFactory.GetDriver(CurrentBrowser, ImplicitWait);
 
-		public static void OpenUrl(string urlconfig)
-		{
-			 
-		}
+	    }
 
-		public static void CloseDriver()
-		{
-			 
-		}
+	    private static void InitParameters()
+	    {
+	        ImplicitWait = Convert.ToInt32(ConfigManager.ImplicitWait);
+	        TimeoutForElement = Convert.ToDouble(ConfigManager.ElementTimeout);
+	        configbrowser = ConfigManager.ConfigBrowser;
+	        Enum.TryParse(configbrowser, out CurrentBrowser);
+	    }
+
+	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());
 	}
 }

@@ -12,13 +12,14 @@ namespace TestWebLibrary.Utils
 
     public class ConfigManager
 	{
-		public static string configUrl => GetConfigvalue("startURL");
-		public static string configBrowser => GetConfigvalue("browser");
-		public static string configLogin => GetConfigvalue("login");
-		public static string configPassword => GetConfigvalue("password");
+		public static string ConfigUrl => GetConfigvalue("startURL");
+		public static string ConfigBrowser => GetConfigvalue("browser");
+		public static string ConfigLogin => GetConfigvalue("login");
+		public static string ConfigPassword => GetConfigvalue("password");
+	    public static string ElementTimeout => GetConfigvalue("element_timeout");
+	    public static string ImplicitWait => GetConfigvalue("implicit_wait");
 
-
-		private static string GetConfigvalue(string key)
+        private static string GetConfigvalue(string key)
 		 {
 			  return ConfigurationSettings.AppSettings[key];
 		 }

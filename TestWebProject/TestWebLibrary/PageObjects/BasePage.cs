@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	public class BasePage
+	public abstract class BasePage
 	{
 		private IWebDriver driver;
 

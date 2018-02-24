@@ -19,7 +19,7 @@ namespace TestWebProject
 	public class LogInPage : BasePage
 	{
 		private IWebDriver driver;
-		private string baseUrl = ConfigManager.configUrl;
+		private string baseUrl = ConfigManager.ConfigUrl;
 		private By loginfield = By.Id("username");
 		private By passwordfield = By.Id("password");
 		private By loginbutton = By.Name("login");

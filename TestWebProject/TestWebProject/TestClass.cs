@@ -26,7 +26,7 @@ namespace TestWebProject
 	    [OneTimeSetUp]
 		public void SetupTest()
 		{
-			if ("ff".Equals(ConfigManager.configBrowser))
+			if ("ff".Equals(ConfigManager.ConfigBrowser))
 			{
 				var service = FirefoxDriverService.CreateDefaultService();
 				this.Driver = new FirefoxDriver(service);
@@ -56,8 +56,8 @@ namespace TestWebProject
 		{
 			LogInPage loginpage = new LogInPage(this.Driver);
 			loginpage.GoToLogInPage();
-		 	loginpage.FillLoginField(ConfigManager.configLogin);
-			loginpage.FillPasswordField(ConfigManager.configPassword);
+		 	loginpage.FillLoginField(ConfigManager.ConfigLogin);
+			loginpage.FillPasswordField(ConfigManager.ConfigPassword);
 
 			HomePage homepage = loginpage.ClickToLogIn();
 			homepage.ValidateHomePage();
