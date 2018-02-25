@@ -14,17 +14,15 @@ namespace TestWebLibrary.PageObjects
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/issues/new";
-		private By issueprojectelement = By.Id("issue_project_id");
+		private static readonly By issueprojectelement = By.Id("issue_project_id");
 		private By trackerelement = By.Id("issue_tracker_id");
         private By issuesubjectfield = By.Id("issue_subject");
 		private By issuestatus = By.Id("issue_status_id");
 		private By issuepriority = By.Id("issue_priority_id");
 
-		public NewIssuePage(IWebDriver driver)
+		public NewIssuePage():base (issueprojectelement, "New Issue Page")
 		{
-			this.driver = driver;
-			this.driver.Manage().Window.Maximize();
-			PageFactory.InitElements(driver, this);
+			 
 		}
 
 		public void GoToNewIssuePage()

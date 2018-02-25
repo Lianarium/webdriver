@@ -15,16 +15,14 @@ namespace TestWebLibrary.PageObjects
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/projects/new";
-		private By namefield = By.Id("project_name");
+		private static readonly  By namefield = By.Id("project_name");
 		private By identifierfield = By.Id("project_name");
 		private By createbutton;
 		private By createandcontinuebutton;
 
-		public NewProjectPage(IWebDriver driver)
+		public NewProjectPage():base(namefield,"New Project Page")
 		{
-			this.driver = driver;
-			this.driver.Manage().Window.Maximize();
-			PageFactory.InitElements(driver, this);
+			 
 		}
 
 		public void GoToNewProjectPage()

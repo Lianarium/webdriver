@@ -8,19 +8,12 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	public class ActivityPage : BasePage
+	public class ActivityPage 
 	{
 		private IWebDriver driver;
 		private string baseUrl = "http://icerow.com/activity";
 		 
-
-		public ActivityPage(IWebDriver driver)
-		{
-			this.driver = driver;
-			this.driver.Manage().Window.Maximize();
-			PageFactory.InitElements(driver, this);
-		}
-
+         
 		public void GoToActivityPage()
 		{
 			driver.Navigate().GoToUrl(baseUrl);

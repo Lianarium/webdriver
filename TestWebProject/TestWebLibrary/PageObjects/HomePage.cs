@@ -18,17 +18,15 @@ namespace TestWebProject
 	public class HomePage : BasePage
 	{
 		private IWebDriver driver;
-		private By projectselement = By.ClassName("projects");
+		private static readonly  By projectselement = By.ClassName("projects");
 		private By newprojectelement = By.LinkText("New project");
 		private By viewallissueselement = By.LinkText("View all issues");
 		private By overallactivityelement = By.LinkText("Overall activity");
 		private By homepagetitleframe = By.Id("content");
 
-		public HomePage(IWebDriver driver)
+		public HomePage():base(projectselement, "Home Page")
 		{
-			this.driver = driver;
-			this.driver.Manage().Window.Maximize();
-			PageFactory.InitElements(driver, this);
+			 
 		}
 
 		 

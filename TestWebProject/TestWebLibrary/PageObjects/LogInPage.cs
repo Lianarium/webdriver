@@ -18,31 +18,29 @@ namespace TestWebProject
 	 
 	public class LogInPage : BasePage
 	{
-		private IWebDriver driver;
+		 
 		private string baseUrl = ConfigManager.ConfigUrl;
-		private By loginfield = By.Id("username");
-		private By passwordfield = By.Id("password");
-		private By loginbutton = By.Name("login");
-		private By projectselement = By.ClassName("projects");
-		private By newprojectelement = By.LinkText("New project");
+		private static readonly By loginfield = By.Id("username");
+        private static readonly By passwordfield = By.Id("password");
+		private static readonly By loginbutton = By.Name("login");
+        private static readonly By projectselement = By.ClassName("projects");
+		private static readonly By newprojectelement = By.LinkText("New project");
 		
 
-		public LogInPage(IWebDriver driver) 
+		public LogInPage():base(loginfield, "Log in page" )
 		{
 			 
-			this.driver = driver;
-			this.driver.Manage().Window.Maximize();
-			PageFactory.InitElements(driver, this);
+			 
 		}
 
 
 	
 		public void GoToLogInPage()
 		{
-			driver.Navigate().GoToUrl(baseUrl);
+			 
 		}
 
-		public void FillLoginField(string login)
+		/*public void FillLoginField(string login)
 		{
 			isElementVisible(this.driver, loginfield);
 			this.driver.FindElement(loginfield).Click(); 
@@ -61,7 +59,7 @@ namespace TestWebProject
 			isElementVisible(this.driver, loginbutton);
 			this.driver.FindElement(loginbutton).Click();
 		    return new HomePage(driver);//go to homepage
-		}
+		}*/
 
 		
 	}
