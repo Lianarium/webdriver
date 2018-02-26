@@ -13,48 +13,38 @@ namespace TestWebLibrary.PageObjects
 {
 	class NewProjectPage : BasePage
 	{
-		private IWebDriver driver;
-		private string baseUrl = "http://icerow.com/projects/new";
-		private static readonly  By namefield = By.Id("project_name");
-		private By identifierfield = By.Id("project_name");
-		private By createbutton;
-		private By createandcontinuebutton;
+		private static readonly By newproject = By.XPath("//h2");
+		private readonly BaseElement namefield = new BaseElement(By.Id("project_name"));
+		private readonly BaseElement identifierfield = new BaseElement(By.Id("project_name"));
+		private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'create']"));
+		private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
 
-		public NewProjectPage():base(namefield,"New Project Page")
+		public NewProjectPage():base(newproject,"New Project Page")
 		{
 			 
 		}
 
-		public void GoToNewProjectPage()
-		{
-			driver.Navigate().GoToUrl(baseUrl);
-		}
+		 
 
 		public void EnterProjectName()
 		{
-			isElementVisible(this.driver, namefield);
-			this.driver.FindElement(namefield).Click();
-			this.driver.FindElement(namefield).SendKeys("Project1");//remove harcode!
+			 
 		}
 
 		public void EnterProjectIdentifier()
 		{
-			isElementVisible(this.driver, identifierfield);
-			this.driver.FindElement(identifierfield).Click();
-			this.driver.FindElement(identifierfield).SendKeys("some_identifier");//remove harcode!
+			 
 		}
 
 
 		public void Create()
 		{
-			isElementVisible(this.driver, createbutton);
-			this.driver.FindElement(createbutton).Click();
+			 
 		}
 
-		public void CreateAndContinue()
+		public void CreateProjectAndContinue()
 		{
-			isElementVisible(this.driver, createandcontinuebutton);
-			this.driver.FindElement(createandcontinuebutton).Click();
+			 
 		}
 
 		 

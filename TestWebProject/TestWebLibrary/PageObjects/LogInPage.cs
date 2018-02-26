@@ -19,47 +19,41 @@ namespace TestWebProject
 	public class LogInPage : BasePage
 	{
 		 
-		private string baseUrl = ConfigManager.ConfigUrl;
-		private static readonly By loginfield = By.Id("username");
-        private static readonly By passwordfield = By.Id("password");
-		private static readonly By loginbutton = By.Name("login");
-        private static readonly By projectselement = By.ClassName("projects");
-		private static readonly By newprojectelement = By.LinkText("New project");
+		
+		private static readonly By login = By.Id("username"); //unique element to check the page
+		private readonly BaseElement loginfield = new BaseElement(By.Id("username"));
+		private readonly BaseElement passwordfield = new BaseElement(By.Id("password"));
+		private readonly BaseElement loginbutton = new BaseElement(By.Name("login"));
+
+		private readonly string loginkey = ConfigManager.ConfigLogin;
+        private readonly string passwordkey = ConfigManager.ConfigPassword;
+        //private static readonly BaseElement projectselement = new BaseElement(By.ClassName("projects")); 
+		//private static readonly By newprojectelement = By.LinkText("New project");
 		
 
-		public LogInPage():base(loginfield, "Log in page" )
+		public LogInPage():base(login, "Log in page")
 		{
-			 
-			 
+
+			
 		}
 
-
-	
-		public void GoToLogInPage()
+		 public void FillLoginField()
 		{
-			 
+			this.loginfield.Click();
+			this.loginfield.SendKeys(loginkey);
 		}
 
-		/*public void FillLoginField(string login)
+		public void FillPasswordField()
 		{
-			isElementVisible(this.driver, loginfield);
-			this.driver.FindElement(loginfield).Click(); 
-			this.driver.FindElement(loginfield).SendKeys(login); 
-		}
-
-		public void FillPasswordField(string password)
-		{
-			isElementVisible(this.driver, passwordfield);
-			this.driver.FindElement(passwordfield).Click(); 
-			this.driver.FindElement(passwordfield).SendKeys(password); 
+			this.passwordfield.Click();
+			this.passwordfield.SendKeys(passwordkey);
 		}
 
 		public HomePage ClickToLogIn()
 		{
-			isElementVisible(this.driver, loginbutton);
-			this.driver.FindElement(loginbutton).Click();
-		    return new HomePage(driver);//go to homepage
-		}*/
+			this.loginbutton.Click();
+			return new HomePage();
+		}
 
 		
 	}

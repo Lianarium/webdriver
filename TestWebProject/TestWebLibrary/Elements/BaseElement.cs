@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using log4net;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using TestWebLibrary.BrowserWork;
@@ -24,8 +26,9 @@ namespace TestWebLibrary.PageObjects
        public Size Size { get; }
        public bool Displayed { get; }
 
-
-        public BaseElement(By locator)
+	   private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+	    
+		public BaseElement(By locator)
        {
            this.Locator = locator;
        }
@@ -70,7 +73,9 @@ namespace TestWebLibrary.PageObjects
 
        public void SendKeys(string text)
        {
-           throw new NotImplementedException();
+			this.WaitForElementIsVisible();
+	        Browser.GetDriver().FindElement(this.Locator).SendKeys(text);
+	        this.log.Info("Text input: " + text);
        }
 
        public void Submit()
@@ -80,7 +85,8 @@ namespace TestWebLibrary.PageObjects
 
        public void Click()
        {
-           throw new NotImplementedException();
+            this.WaitForElementIsVisible();
+		    Browser.GetDriver().FindElement(this.Locator).Click();
        }
 
        public string GetAttribute(string attributeName)

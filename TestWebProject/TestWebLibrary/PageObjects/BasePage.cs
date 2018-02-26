@@ -25,7 +25,7 @@ namespace TestWebLibrary.PageObjects
 	    public void AssertIsOpened()
 	    {
           var label = new BaseElement(this.TitleLocator, this.Title);
-	        label.WaitForElementIsVisible();
+	      label.WaitForElementIsVisible();
 
 	    }
 

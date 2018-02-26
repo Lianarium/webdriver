@@ -35,3 +35,5 @@ C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebLibrary\obj\D
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebLibrary\obj\Debug\TestWebLibrary.csproj.CoreCompileInputs.cache
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebLibrary\obj\Debug\TestWebLibrary.dll
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebLibrary\obj\Debug\TestWebLibrary.pdb
+C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebLibrary\bin\Debug\log4net.dll
+C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebLibrary\bin\Debug\log4net.xml

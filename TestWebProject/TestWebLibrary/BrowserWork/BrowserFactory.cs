@@ -6,25 +6,22 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using TestWebLibrary.Utils;
 
 namespace TestWebLibrary.BrowserWork
 {
-    public class BrowserFactory//the newest one
+    public class BrowserFactory 
     {
-        private static IWebDriver driver;
+        //private static IWebDriver driver;
 
-        public enum BrowserType
-        {
-            Chrome,
-            Firefox
-        }
+	    protected static string BrowserType = ConfigManager.ConfigBrowser;
 
-        public static IWebDriver GetDriver(BrowserType type, int timeoutsec)
+        public static IWebDriver GetDriver(string type, int timeoutsec)
         {
             IWebDriver driver = null;
             switch (type)
             {
-                case BrowserType.Chrome:
+                case "Chrome":
                 {
                     var service = ChromeDriverService.CreateDefaultService();
                     var option = new ChromeOptions();
@@ -33,7 +30,7 @@ namespace TestWebLibrary.BrowserWork
                     break;
 
                 }
-                case BrowserType.Firefox:
+                case  "Firefox":
                 {
                     var service = FirefoxDriverService.CreateDefaultService();
                     var option = new FirefoxOptions();

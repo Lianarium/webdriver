@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
@@ -58,7 +62,7 @@
   <ItemGroup>
     <Compile Include="BrowserWork\Browser.cs" />
     <Compile Include="BrowserWork\BrowserFactory.cs" />
-    <Compile Include="PageObjects\BaseElement.cs" />
+    <Compile Include="Elements\BaseElement.cs" />
     <Compile Include="Utils\ConfigManager.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="PageObjects\ActivityPage.cs" />

@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace TestWebLibrary.PageObjects
 {
-	public class ActivityPage 
+	public class ActivityPage : BasePage
 	{
-		private IWebDriver driver;
-		private string baseUrl = "http://icerow.com/activity";
-		 
-         
-		public void GoToActivityPage()
+		private static readonly By activitylabel = By.XPath("//h2"); //unique element to check the page
+
+		public ActivityPage():base(activitylabel, "Activity Page")
 		{
-			driver.Navigate().GoToUrl(baseUrl);
+
+
 		}
+
 
 
 	}

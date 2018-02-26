@@ -17,48 +17,40 @@ namespace TestWebProject
 {
 	public class HomePage : BasePage
 	{
-		private IWebDriver driver;
-		private static readonly  By projectselement = By.ClassName("projects");
-		private By newprojectelement = By.LinkText("New project");
-		private By viewallissueselement = By.LinkText("View all issues");
-		private By overallactivityelement = By.LinkText("Overall activity");
-		private By homepagetitleframe = By.Id("content");
+		 
+		private static readonly By projects = By.ClassName("projects");//unique element to check the page
+		private readonly BaseElement projectelement = new BaseElement(By.ClassName("projects"));
+		private readonly BaseElement newprojectelement = new BaseElement(By.LinkText("New project")); 
+		private readonly BaseElement viewallissueselement = new BaseElement(By.LinkText("View all issues")); 
+		private readonly BaseElement overallactivityelement = new BaseElement(By.LinkText("Overall activity"));
+		private readonly BaseElement homepagetitleframe = new BaseElement(By.Id("content")); 
 
-		public HomePage():base(projectselement, "Home Page")
+		public HomePage():base(projects, "Home Page")
 		{
 			 
 		}
 
-		 
+	
 
-		public void ClickprojectsLink()
+		public void ClickProjectLink()
 		{
-			isElementVisible(this.driver, projectselement);
-			this.driver.FindElement(projectselement).Click();
-		}
+			this.projectelement.Click();
+	    }
 
-		public void CreateNewProject()
+		public void ClickToCreateNewProject()
 		{
-			isElementVisible(this.driver, newprojectelement);
-			this.driver.FindElement(newprojectelement).Click();
-		}
-
-		public void ViewAllIssues()
-		{
-			isElementVisible(this.driver, viewallissueselement);
-			this.driver.FindElement(viewallissueselement).Click();
+			 this.newprojectelement.Click();
 		}
 
 		public void ViewOverallactivity()
 		{
-			isElementVisible(this.driver, overallactivityelement);
-			this.driver.FindElement(overallactivityelement).Click();
+			 this.overallactivityelement.Click();
 		}
 
 		public void ValidateHomePage()
 		{
 
-			Assert.AreEqual(this.driver.FindElement(homepagetitleframe).Text, "Home");
+			Assert.AreEqual(this.homepagetitleframe.Text, "Home");
 		}
 
 

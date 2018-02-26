@@ -16,7 +16,7 @@ namespace TestWebLibrary.BrowserWork
 
 	    private static Browser currentInstance;
 	    private static IWebDriver driver;
-	    public static BrowserFactory.BrowserType CurrentBrowser;
+	    public static string CurrentBrowser;
 	    public static int ImplicitWait;
 	    public static double TimeoutForElement;
 	    private static string configbrowser;
@@ -33,7 +33,7 @@ namespace TestWebLibrary.BrowserWork
 	        ImplicitWait = Convert.ToInt32(ConfigManager.ImplicitWait);
 	        TimeoutForElement = Convert.ToDouble(ConfigManager.ElementTimeout);
 	        configbrowser = ConfigManager.ConfigBrowser;
-	        Enum.TryParse(configbrowser, out CurrentBrowser);
+	        CurrentBrowser = configbrowser;
 	    }
 
 	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());
@@ -57,8 +57,8 @@ namespace TestWebLibrary.BrowserWork
        
 	    public static void Quit()
 	    {
-            //driver.Quit();
-	        //currentInstance = null;
+             driver.Quit();
+	         currentInstance = null;
 	    }
     }
 }

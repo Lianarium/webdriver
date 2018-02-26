@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using log4net.Config;
 using NUnit.Framework;
 using TestWebLibrary.BrowserWork;
 using TestWebLibrary.Utils;
 
-namespace TestWebLibrary.Test
+namespace TestWebProject.Test
 {
     public class BaseTest
     {
-        protected static Browser browser = Browser.Instance;
+        protected static Browser Browser = Browser.Instance;
 
         [OneTimeSetUp]
         public virtual void InitializeTest()
         {
-            browser = Browser.Instance;
+	        XmlConfigurator.Configure();//Logging!
+			Browser = Browser.Instance;
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);
         }
