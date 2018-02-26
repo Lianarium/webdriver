@@ -75,7 +75,7 @@ namespace TestWebLibrary.PageObjects
        {
 			this.WaitForElementIsVisible();
 	        Browser.GetDriver().FindElement(this.Locator).SendKeys(text);
-	        this.log.Info("Text input: " + text);
+	        this.log.Info("Text input: "  + text);
        }
 
        public void Submit()
@@ -87,6 +87,7 @@ namespace TestWebLibrary.PageObjects
        {
             this.WaitForElementIsVisible();
 		    Browser.GetDriver().FindElement(this.Locator).Click();
+            this.log.Info("Clicked " + " element");
        }
 
        public string GetAttribute(string attributeName)

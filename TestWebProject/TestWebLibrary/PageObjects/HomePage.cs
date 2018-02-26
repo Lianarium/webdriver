@@ -18,42 +18,24 @@ namespace TestWebProject
 	public class HomePage : BasePage
 	{
 		 
-		private static readonly By projects = By.ClassName("projects");//unique element to check the page
-		private readonly BaseElement projectelement = new BaseElement(By.ClassName("projects"));
-		private readonly BaseElement newprojectelement = new BaseElement(By.LinkText("New project")); 
-		private readonly BaseElement viewallissueselement = new BaseElement(By.LinkText("View all issues")); 
-		private readonly BaseElement overallactivityelement = new BaseElement(By.LinkText("Overall activity"));
-		private readonly BaseElement homepagetitleframe = new BaseElement(By.Id("content")); 
+		private static readonly By homelabel = By.XPath("//h2");//unique element to check the page
+		private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
+		 
 
-		public HomePage():base(projects, "Home Page")
+		public HomePage():base(homelabel, "Home Page")
 		{
 			 
 		}
 
 	
 
-		public void ClickProjectLink()
+		public ProjectsPage ClickProjectLink()
 		{
 			this.projectelement.Click();
-	    }
-
-		public void ClickToCreateNewProject()
-		{
-			 this.newprojectelement.Click();
+		    return new ProjectsPage();
 		}
 
-		public void ViewOverallactivity()
-		{
-			 this.overallactivityelement.Click();
-		}
-
-		public void ValidateHomePage()
-		{
-
-			Assert.AreEqual(this.homepagetitleframe.Text, "Home");
-		}
-
-
+	
 		 
 	}
 }

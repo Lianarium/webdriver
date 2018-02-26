@@ -21,14 +21,13 @@ namespace TestWebProject
 		 
 		
 		private static readonly By login = By.Id("username"); //unique element to check the page
-		private readonly BaseElement loginfield = new BaseElement(By.Id("username"));
-		private readonly BaseElement passwordfield = new BaseElement(By.Id("password"));
-		private readonly BaseElement loginbutton = new BaseElement(By.Name("login"));
+		private readonly BaseElement loginfield = new BaseElement(By.XPath("//*[@id='username']"));
+		private readonly BaseElement passwordfield = new BaseElement(By.XPath("//*[@id='password']"));
+		private readonly BaseElement loginbutton = new BaseElement(By.XPath("//*[@name='login']"));
 
 		private readonly string loginkey = ConfigManager.ConfigLogin;
         private readonly string passwordkey = ConfigManager.ConfigPassword;
-        //private static readonly BaseElement projectselement = new BaseElement(By.ClassName("projects")); 
-		//private static readonly By newprojectelement = By.LinkText("New project");
+         
 		
 
 		public LogInPage():base(login, "Log in page")

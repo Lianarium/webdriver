@@ -18,6 +18,10 @@ namespace TestWebLibrary.Utils
 		public static string ConfigPassword => GetConfigvalue("password", "3psdpsdpsd3");
 	    public static string ElementTimeout => GetConfigvalue("element_timeout", "30");
 	    public static string ImplicitWait => GetConfigvalue("implicit_wait", "30");
+	    public static string ProjectName => GetConfigvalueNoDefault("project_name");
+	    public static string ProjectIdentifier => GetConfigvalueNoDefault("project_identifier");
+	    public static string IssueSubject => GetConfigvalueNoDefault("issue_subject");
+
 
         private static string GetConfigvalue(string key, string defaultvalue)
 		 {

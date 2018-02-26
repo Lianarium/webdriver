@@ -38,7 +38,6 @@ C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\D
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\Mono.Cecil.Pdb.dll
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\Mono.Cecil.Mdb.dll
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\Mono.Cecil.Rocks.dll
-C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\Log.txt
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\TestWebProject.dll.config
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\TestWebProject.dll
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\TestWebProject.pdb
@@ -57,3 +56,5 @@ C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\obj\D
 C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\obj\Debug\TestWebProject.pdb
 C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\log4net.dll
 C:\Users\Alina_Apet\Documents\HomeTask6(WebDriver)\webdriver\TestWebProject\TestWebProject\bin\Debug\log4net.xml
+C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\log4net.dll
+C:\Users\User1\Documents\webdriver\webdriver\TestWebProject\TestWebProject\bin\Debug\log4net.xml

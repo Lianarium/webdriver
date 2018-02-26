@@ -5,20 +5,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
+using TestWebLibrary.Utils;
 
 namespace TestWebLibrary.PageObjects
 {
 	public class ActivityPage : BasePage
 	{
 		private static readonly By activitylabel = By.XPath("//h2"); //unique element to check the page
-
-		public ActivityPage():base(activitylabel, "Activity Page")
+	    private readonly BaseElement issueprojectnote = new BaseElement(By.XPath("//*[@class='project']']"));
+        public ActivityPage():base(activitylabel, "Activity Page")
 		{
 
 
 		}
 
 
-
+	    public void CheckIsNewIssueNotePresent()
+	    {
+            Assert.AreEqual(issueprojectnote.Text, ConfigManager.ProjectName);
+	    }
 	}
 }
