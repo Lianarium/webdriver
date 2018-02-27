@@ -19,7 +19,7 @@ namespace TestWebLibrary.PageObjects
        protected By Locator;
        protected IWebElement Element;
        public string TagName { get; }
-       public string Text { get; }
+		public string Text { get; }
        public bool Enabled { get; }
        public bool Selected { get; }
        public Point Location { get; }
@@ -45,11 +45,11 @@ namespace TestWebLibrary.PageObjects
            return this.Element;
        }
 
-        private string GetText()
+        public string GetText()
         {
             this.WaitForElementIsVisible();
-            return this.Element.Text;
-        }
+			return Browser.GetDriver().FindElement(this.Locator).Text;
+		}
 
        public void WaitForElementIsVisible()
        {
@@ -68,8 +68,9 @@ namespace TestWebLibrary.PageObjects
 
        public void Clear()
        {
-           throw new NotImplementedException();
-       }
+		   this.WaitForElementIsVisible();
+	       Browser.GetDriver().FindElement(this.Locator).Clear();
+		}
 
        public void SendKeys(string text)
        {
@@ -80,8 +81,10 @@ namespace TestWebLibrary.PageObjects
 
        public void Submit()
        {
-           throw new NotImplementedException();
-       }
+
+			this.WaitForElementIsVisible();
+	        Browser.GetDriver().FindElement(this.Locator).Submit();
+		}
 
        public void Click()
        {
@@ -92,18 +95,21 @@ namespace TestWebLibrary.PageObjects
 
        public string GetAttribute(string attributeName)
        {
-           throw new NotImplementedException();
-       }
+			this.WaitForElementIsVisible();
+	        return Browser.GetDriver().FindElement(this.Locator).GetAttribute(attributeName);
+		}
 
        public string GetProperty(string propertyName)
        {
-           throw new NotImplementedException();
-       }
+			this.WaitForElementIsVisible();
+	        return Browser.GetDriver().FindElement(this.Locator).GetProperty(propertyName);
+		}
 
        public string GetCssValue(string propertyName)
        {
-           throw new NotImplementedException();
-       }
+			this.WaitForElementIsVisible();
+	        return Browser.GetDriver().FindElement(this.Locator).GetCssValue(propertyName);
+		}
 
        
    }

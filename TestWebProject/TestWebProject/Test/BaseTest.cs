@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using log4net.Config;
 using NUnit.Framework;
 using TestWebLibrary.BrowserWork;
+using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
 
 namespace TestWebProject.Test
@@ -22,6 +23,12 @@ namespace TestWebProject.Test
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);
         }
+
+	    /*[SetUp]
+		public void LogIn()
+	    {
+			Steps.LogIn();
+	    }*/
 
         [OneTimeTearDown]
         public virtual void CleanTest()

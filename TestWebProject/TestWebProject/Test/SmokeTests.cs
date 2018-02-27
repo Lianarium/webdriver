@@ -13,38 +13,32 @@ using log4net.Config;
 using TestWebProject;
 using NUnit.Framework;
 using TestWebLibrary.PageObjects;
+using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
 
 namespace TestWebProject.Test
 {
     [TestFixture]
-    public class LoginTest : BaseTest
+    public class SmokeTests : BaseTest
     {
 
 
         [Test]
         public void LogInTest()
         {
-
-            LogInPage loginpage = new LogInPage();
-            loginpage.FillLoginField();
-            loginpage.FillPasswordField();
-            HomePage homepage = loginpage.ClickToLogIn();
-            homepage.ClickProjectLink();
-            ProjectsPage projectspage = homepage.ClickProjectLink();
-            NewProjectPage newprojectpage = projectspage.ClickToCreateNewProject();
+            Steps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
         }
 
         [Test]
         public void HomePageTest()
         {
-            LogInPage loginpage = new LogInPage();
+            /*LogInPage loginpage = new LogInPage();
             loginpage.FillLoginField();
             loginpage.FillPasswordField();
             HomePage homepage = loginpage.ClickToLogIn();
             homepage.ClickProjectLink();
             ProjectsPage projectspage = homepage.ClickProjectLink();
-            IssuesPage issuesPage = projectspage.ClickToViewIssues();
+            IssuesPage issuesPage = projectspage.ClickToViewIssues();*/
         }
 
 
@@ -52,11 +46,10 @@ namespace TestWebProject.Test
         public void NewIssueTest()
 
         {
-            LogInPage loginpage = new LogInPage();
+           /* LogInPage loginpage = new LogInPage();
             loginpage.FillLoginField();
             loginpage.FillPasswordField();
             HomePage homepage = loginpage.ClickToLogIn();
-            //homepage.ClickProjectLink();
             ProjectsPage projectspage = homepage.ClickProjectLink();
             IssuesPage issuesPage = projectspage.ClickToViewIssues();
             NewIssuePage newissuepage = issuesPage.ClickToCreateNewIssuePage();
@@ -64,20 +57,20 @@ namespace TestWebProject.Test
             newissuepage.CreateTracker();
             newissuepage.EnterSubject();
             newissuepage.ChooseIssueStatus();
-            newissuepage.ChooseIssuePriority();
+            newissuepage.ChooseIssuePriority();*/
 
         }
 
         [Test]
         public void ActivityTest()
         {
-            LogInPage loginpage = new LogInPage();
+            /*LogInPage loginpage = new LogInPage();
             loginpage.FillLoginField();
             loginpage.FillPasswordField();
             HomePage homepage = loginpage.ClickToLogIn();
             ProjectsPage projectspage = homepage.ClickProjectLink();
             ActivityPage activityPage = projectspage.ViewOverallactivity();
-            activityPage.CheckIsNewIssueNotePresent();
+            activityPage.CheckIsProjectNotePresent();*/
         }
     }
 }

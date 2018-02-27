@@ -13,17 +13,23 @@ namespace TestWebLibrary.PageObjects
 	public class ActivityPage : BasePage
 	{
 		private static readonly By activitylabel = By.XPath("//h2"); //unique element to check the page
-	    private readonly BaseElement issueprojectnote = new BaseElement(By.XPath("//*[@class='project']']"));
-        public ActivityPage():base(activitylabel, "Activity Page")
+	    private readonly BaseElement issueprojectnote = new BaseElement(By.XPath("//*[@class='project']"));
+		public ActivityPage():base(activitylabel, "Activity Page")
 		{
 
 
 		}
 
 
-	    public void CheckIsNewIssueNotePresent()
+	    public void CheckIsProjectNotePresent()
 	    {
-            Assert.AreEqual(issueprojectnote.Text, ConfigManager.ProjectName);
+		    string projectnote = issueprojectnote.GetText();
+            Assert.AreEqual(projectnote, ConfigManager.ProjectName);
 	    }
+
+		public void CheckIsNewIssueNoteIsPresent()
+		{ 
+
+		}
 	}
 }

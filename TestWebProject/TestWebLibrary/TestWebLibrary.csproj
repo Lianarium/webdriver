@@ -64,6 +64,7 @@
     <Compile Include="BrowserWork\BrowserFactory.cs" />
     <Compile Include="Elements\BaseElement.cs" />
     <Compile Include="PageObjects\ProjectsPage.cs" />
+    <Compile Include="Steps\Steps.cs" />
     <Compile Include="Utils\ConfigManager.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="PageObjects\ActivityPage.cs" />

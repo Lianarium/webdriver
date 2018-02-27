@@ -14,14 +14,20 @@ namespace TestWebLibrary.BrowserWork
     {
         //private static IWebDriver driver;
 
-	    protected static string BrowserType = ConfigManager.ConfigBrowser;
+	   // protected static string BrowserType = ConfigManager.ConfigBrowser;
 
-        public static IWebDriver GetDriver(string type, int timeoutsec)
+		public enum  BrowserType
+		{
+			Chrome,
+			Firefox
+		}
+
+        public static IWebDriver GetDriver(BrowserType type, int timeoutsec)
         {
             IWebDriver driver = null;
             switch (type)
             {
-                case "Chrome":
+                case BrowserType.Chrome:
                 {
                     var service = ChromeDriverService.CreateDefaultService();
                     var option = new ChromeOptions();
@@ -30,7 +36,7 @@ namespace TestWebLibrary.BrowserWork
                     break;
 
                 }
-                case  "Firefox":
+                case  BrowserType.Firefox:
                 {
                     var service = FirefoxDriverService.CreateDefaultService();
                     var option = new FirefoxOptions();

@@ -16,11 +16,10 @@ namespace TestWebLibrary.BrowserWork
 
 	    private static Browser currentInstance;
 	    private static IWebDriver driver;
-	    public static string CurrentBrowser;
+	    public static BrowserFactory.BrowserType CurrentBrowser;
 	    public static int ImplicitWait;
 	    public static double TimeoutForElement;
-	    private static string configbrowser;
-
+	    
 	    private Browser()
 	    {
 	        InitParameters();
@@ -32,8 +31,8 @@ namespace TestWebLibrary.BrowserWork
 	    {
 	        ImplicitWait = Convert.ToInt32(ConfigManager.ImplicitWait);
 	        TimeoutForElement = Convert.ToDouble(ConfigManager.ElementTimeout);
-	        configbrowser = ConfigManager.ConfigBrowser;
-	        CurrentBrowser = configbrowser;
+	         
+	       
 	    }
 
 	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());

@@ -25,8 +25,8 @@ namespace TestWebProject
 		private readonly BaseElement passwordfield = new BaseElement(By.XPath("//*[@id='password']"));
 		private readonly BaseElement loginbutton = new BaseElement(By.XPath("//*[@name='login']"));
 
-		private readonly string loginkey = ConfigManager.ConfigLogin;
-        private readonly string passwordkey = ConfigManager.ConfigPassword;
+		//private readonly string loginkey = ConfigManager.ConfigLogin;
+        //private readonly string passwordkey = ConfigManager.ConfigPassword;
          
 		
 
@@ -36,16 +36,18 @@ namespace TestWebProject
 			
 		}
 
-		 public void FillLoginField()
+		 public LogInPage FillLoginField(string loginkey)
 		{
 			this.loginfield.Click();
 			this.loginfield.SendKeys(loginkey);
+			return new LogInPage();
 		}
 
-		public void FillPasswordField()
+		public LogInPage FillPasswordField(string passwordkey)
 		{
 			this.passwordfield.Click();
 			this.passwordfield.SendKeys(passwordkey);
+			return new LogInPage();
 		}
 
 		public HomePage ClickToLogIn()
