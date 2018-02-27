@@ -11,16 +11,41 @@ namespace TestWebLibrary.Steps
 {
 	public class Steps//PageObjects Wrapper
 	{
-		public static HomePage LogIn(string login, string password)
+	    private static LogInPage loginPage = new LogInPage();
+	    private static HomePage homePage = new HomePage();
+	    private static ProjectsPage projectsPage = new ProjectsPage();
+	    private static NewProjectPage newprojectPage = new NewProjectPage();
+	    private static IssuesPage issuesPage = new IssuesPage();
+	    private static ActivityPage activityPage = new ActivityPage();
+
+
+        public static HomePage LogIn(string login, string password)
 		{
-			LogInPage loginpage = new LogInPage();
-			HomePage homepage = loginpage.FillLoginField(login).FillPasswordField(password).ClickToLogIn();
-			return homepage;  
+		    homePage = loginPage.FillLoginField(login).FillPasswordField(password).ClickToLogIn();
+			return homePage;  
 		}
 
 		public static void GoToProjectsPage()
 		{
-			 
+
+		   projectsPage =  homePage.ClickProjectLink();
+
 		}
-	}
+
+	    public static void CreateNewProject()
+	    {
+	        newprojectPage = projectsPage.ClickToCreateNewProject();
+	    }
+
+	    public static void GoToIssuesPage()
+	    {
+	        issuesPage = projectsPage.ClickToViewIssues();
+        }
+
+	    public static void GoToActivityPage()
+	    {
+	        activityPage = projectsPage.ViewOverallactivity();
+	    }
+
+    }
 }

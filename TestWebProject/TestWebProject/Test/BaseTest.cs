@@ -24,11 +24,11 @@ namespace TestWebProject.Test
             Browser.NavigateTo(ConfigManager.ConfigUrl);
         }
 
-	    /*[SetUp]
+	    [SetUp]
 		public void LogIn()
 	    {
-			Steps.LogIn();
-	    }*/
+			 Steps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+	    }
 
         [OneTimeTearDown]
         public virtual void CleanTest()

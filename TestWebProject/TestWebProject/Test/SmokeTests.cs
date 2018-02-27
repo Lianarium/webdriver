@@ -32,32 +32,23 @@ namespace TestWebProject.Test
         [Test]
         public void HomePageTest()
         {
-            /*LogInPage loginpage = new LogInPage();
-            loginpage.FillLoginField();
-            loginpage.FillPasswordField();
-            HomePage homepage = loginpage.ClickToLogIn();
-            homepage.ClickProjectLink();
-            ProjectsPage projectspage = homepage.ClickProjectLink();
-            IssuesPage issuesPage = projectspage.ClickToViewIssues();*/
+            Steps.GoToProjectsPage();
         }
 
+        [Test]
+        public void NewProjectTest()
+        {
+            Steps.GoToProjectsPage();
+            Steps.CreateNewProject();
+        }
 
         [Test]
         public void NewIssueTest()
 
         {
-           /* LogInPage loginpage = new LogInPage();
-            loginpage.FillLoginField();
-            loginpage.FillPasswordField();
-            HomePage homepage = loginpage.ClickToLogIn();
-            ProjectsPage projectspage = homepage.ClickProjectLink();
-            IssuesPage issuesPage = projectspage.ClickToViewIssues();
-            NewIssuePage newissuepage = issuesPage.ClickToCreateNewIssuePage();
-            newissuepage.ChooseProject();
-            newissuepage.CreateTracker();
-            newissuepage.EnterSubject();
-            newissuepage.ChooseIssueStatus();
-            newissuepage.ChooseIssuePriority();*/
+
+            Steps.GoToProjectsPage();
+            Steps.GoToIssuesPage();
 
         }
 
