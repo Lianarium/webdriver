@@ -32,7 +32,7 @@ namespace TestWebLibrary.BrowserWork
                     var service = ChromeDriverService.CreateDefaultService();
                     var option = new ChromeOptions();
                     option.AddArgument("disable-infobars");
-                    driver = new ChromeDriver(service, option, TimeSpan.FromSeconds(timeoutsec));
+                    driver = new ChromeDriver(service);
                     break;
 
                 }
@@ -40,7 +40,7 @@ namespace TestWebLibrary.BrowserWork
                 {
                     var service = FirefoxDriverService.CreateDefaultService();
                     var option = new FirefoxOptions();
-                    driver = new FirefoxDriver(service, option, TimeSpan.FromSeconds(timeoutsec));
+                    driver = new FirefoxDriver(service);
                     break;
                 }
 

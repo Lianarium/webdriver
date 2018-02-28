@@ -16,12 +16,11 @@ namespace TestWebLibrary.PageObjects
 	{
 		private static readonly By newproject = By.XPath("//h2");
 		private readonly BaseElement namefield = new BaseElement(By.XPath("//*[@id='project_name']"));
-
         private readonly BaseElement identifierfield = new BaseElement(By.Id("//*[@id='project_identifier']"));
-		private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'create']"));
-		private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
-	    private readonly string projectname = ConfigManager.ProjectName;
-	    private readonly string projectid = ConfigManager.ProjectIdentifier;
+		private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
+		private readonly BaseElement success = new BaseElement(By.XPath("//*[@id = 'flash_notice']"));
+		private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@value = 'Create and continue']"));
+	    
         public NewProjectPage():base(newproject,"New Project Page")
 		{
 			 
@@ -29,30 +28,27 @@ namespace TestWebLibrary.PageObjects
 
 		 
 
-		public void EnterProjectName()
+		public NewProjectPage EnterProjectName(string projectname)
 		{
 		    this.namefield.Click();
 		    this.namefield.SendKeys(projectname);
+			return new NewProjectPage();
         }
 
-		public void EnterProjectIdentifier()
-		{
-		    this.identifierfield.Click();
-		    this.identifierfield.SendKeys(projectid);
-        }
-
-
+	
 		public void Create()
 		{
 		    this.createbutton.Click();
 	    }
 
-		public void CreateProjectAndContinue()
+		public NewProjectPage CreateProjectAndContinue()
 		{
 			 this.createandcontinuebutton.Click();
+			 return new NewProjectPage();
 		}
 
-		 
+		
+		
 
 		 
 	}

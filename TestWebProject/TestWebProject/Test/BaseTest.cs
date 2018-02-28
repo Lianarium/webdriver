@@ -27,7 +27,7 @@ namespace TestWebProject.Test
 	    [SetUp]
 		public void LogIn()
 	    {
-			 Steps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+			 LogInPageSteps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
 	    }
 
         [OneTimeTearDown]

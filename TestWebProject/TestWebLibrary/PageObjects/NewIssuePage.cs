@@ -23,7 +23,7 @@ namespace TestWebLibrary.PageObjects
 	    private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
 	    private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
 
-        private readonly string newissuesubject = ConfigManager.IssueSubject;
+        //private readonly string newissuesubject = ConfigManager.IssueSubject;
 
         public NewIssuePage():base (newissuelabel, "New issue")
 		{
@@ -31,32 +31,37 @@ namespace TestWebLibrary.PageObjects
 		}
 
 		 
-		public void ChooseProject()
+		public NewIssuePage ChooseProject()
 		{
 			 this.issueprojectelement.Click();
+			 return new NewIssuePage();
               
 		}
 
-		public void CreateTracker()
+		public NewIssuePage CreateTracker()
 		{
 		   this.trackerelement.Click();
+		   return  new NewIssuePage();
 
 		}
 
-		public void EnterSubject()
+		public NewIssuePage EnterSubject(string subject)
 		{
 			 this.issuesubjectfield.Click();
-             this.issuesubjectfield.SendKeys(newissuesubject);
+             this.issuesubjectfield.SendKeys(subject);
+			 return new NewIssuePage();
 		}
 
-		public void ChooseIssueStatus()
+		public NewIssuePage ChooseIssueStatus()
 		{
 			 this.issuestatus.Click();
+			 return new NewIssuePage();
 		}
 
-		public void ChooseIssuePriority()
+		public NewIssuePage ChooseIssuePriority()
 		{
 			 this.issuepriority.Click();
+			 return new NewIssuePage();
 		}
 
 

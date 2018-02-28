@@ -26,20 +26,20 @@ namespace TestWebProject.Test
         [Test]
         public void LogInTest()
         {
-            Steps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+            LogInPageSteps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
         }
 
         [Test]
         public void HomePageTest()
         {
-            Steps.GoToProjectsPage();
+            LogInPageSteps.GoToProjectsPage();
         }
 
         [Test]
         public void NewProjectTest()
         {
-            Steps.GoToProjectsPage();
-            Steps.CreateNewProject();
+            LogInPageSteps.GoToProjectsPage();
+            LogInPageSteps.CreateNewProject(ConfigManager.ProjectName+Randomiser.GetRandomString(5), ConfigManager.ProjectIdentifier);
         }
 
         [Test]
@@ -47,21 +47,16 @@ namespace TestWebProject.Test
 
         {
 
-            Steps.GoToProjectsPage();
-            Steps.GoToIssuesPage();
+            LogInPageSteps.GoToProjectsPage();
+			LogInPageSteps.GoToIssuesPage();
+			LogInPageSteps.CreateNewIssue(ConfigManager.IssueSubject+Randomiser.GetRandomString(5));
 
         }
 
         [Test]
         public void ActivityTest()
         {
-            /*LogInPage loginpage = new LogInPage();
-            loginpage.FillLoginField();
-            loginpage.FillPasswordField();
-            HomePage homepage = loginpage.ClickToLogIn();
-            ProjectsPage projectspage = homepage.ClickProjectLink();
-            ActivityPage activityPage = projectspage.ViewOverallactivity();
-            activityPage.CheckIsProjectNotePresent();*/
+             
         }
     }
 }

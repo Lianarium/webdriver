@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -17,9 +18,9 @@ namespace TestWebLibrary.PageObjects
    {
        protected string Name;
        protected By Locator;
-       protected IWebElement Element;
+      // protected IWebElement Element;
        public string TagName { get; }
-		public string Text { get; }
+	   public string Text { get; }
        public bool Enabled { get; }
        public bool Selected { get; }
        public Point Location { get; }
@@ -28,7 +29,7 @@ namespace TestWebLibrary.PageObjects
 
 	   private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 	    
-		public BaseElement(By locator)
+		public BaseElement(By locator):this(locator, null)
        {
            this.Locator = locator;
        }
@@ -41,8 +42,8 @@ namespace TestWebLibrary.PageObjects
 
        public IWebElement GetElement()
        {
-           this.Element = Browser.GetDriver().FindElement(this.Locator);
-           return this.Element;
+          // this.Element = Browser.GetDriver().FindElement(this.Locator);
+           return new BaseElement(this.Locator);
        }
 
         public string GetText()
