@@ -19,6 +19,16 @@ namespace TestWebLibrary.BrowserWork
 	    public static BrowserFactory.BrowserType CurrentBrowser;
 	    public static int ImplicitWait;
 	    public static double TimeoutForElement;
+	    private static string browsername;
+	    public string BrowserName
+	    { get
+	        {
+	            return browsername;
+	        }
+	        set
+	        {
+	            browsername = value;
+	        }}
 	    
 	    private Browser()
 	    {

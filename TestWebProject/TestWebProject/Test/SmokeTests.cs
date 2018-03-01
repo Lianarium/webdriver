@@ -46,10 +46,10 @@ namespace TestWebProject.Test
         public void NewIssueTest()
 
         {
-
+            string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
             LogInPageSteps.GoToProjectsPage();
 			LogInPageSteps.GoToIssuesPage();
-			LogInPageSteps.CreateNewIssue(ConfigManager.IssueSubject+Randomiser.GetRandomString(5));
+			LogInPageSteps.CreateAndCheckNewIssue(IssueSubj, BaseTest.projname);
 
         }
 

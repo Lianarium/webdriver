@@ -27,9 +27,12 @@ namespace TestWebLibrary.PageObjects
             Assert.AreEqual(projectnote, ConfigManager.ProjectName);
 	    }
 
-		public void CheckIsNewIssueNoteIsPresent()
-		{ 
-
+		public void CheckIsNewIssueNoteIsPresent(string name)
+		{
+		    var attribute = issueprojectnote.GetText();
+		    Assert.AreEqual(attribute,name);
 		}
+
+
 	}
 }

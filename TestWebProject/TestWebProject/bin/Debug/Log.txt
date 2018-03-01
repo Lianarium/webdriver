@@ -524,3 +524,183 @@
 2018-02-28 17:41:47,477 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
 2018-02-28 17:41:47,582 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
 2018-02-28 17:41:47,687 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 21:50:06,844 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 21:50:07,660 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 21:50:07,869 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 21:50:08,101 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 21:50:09,334 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 21:50:10,410 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:34:54,030 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:34:54,736 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 22:34:54,958 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:34:55,190 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 22:34:56,595 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:34:57,512 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:42:09,926 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:42:10,175 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 22:42:10,416 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:42:10,601 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 22:42:11,480 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 22:42:12,244 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:40,827 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:41,085 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 23:22:41,381 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:41,562 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 23:22:42,509 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:43,290 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:44,421 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:45,699 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:46,243 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:47,021 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1YBFH9
+2018-02-28 23:22:47,455 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:47,751 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:48,126 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:22:48,418 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:48,331 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:48,707 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 23:26:48,890 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:49,069 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 23:26:49,906 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:50,634 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:52,430 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:53,989 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:54,294 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:54,842 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_16C4OO
+2018-02-28 23:26:55,086 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:55,352 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:55,673 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:26:55,924 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:40,524 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:40,899 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-02-28 23:52:41,072 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:41,299 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-02-28 23:52:42,190 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:43,099 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:45,060 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:46,432 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:47,216 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:47,748 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1KIDE8
+2018-02-28 23:52:48,018 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:48,353 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:48,581 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-02-28 23:52:48,871 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:39,793 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:40,140 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 00:12:40,328 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:40,506 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 00:12:41,408 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:42,415 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:43,500 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:45,099 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:45,307 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:45,891 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_17MU4W
+2018-03-01 00:12:46,059 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:12:46,268 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:45,884 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:46,173 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 00:16:46,371 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:46,546 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 00:16:47,473 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:48,297 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:49,293 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:50,864 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:51,088 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:51,842 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_1WL7PX
+2018-03-01 00:16:52,092 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:52,340 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:53,095 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:53,274 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:16:54,657 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:41,402 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:41,663 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 00:35:41,842 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:42,035 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 00:35:43,018 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:43,752 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:45,060 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:46,471 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:47,353 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:47,985 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_11JQSZ
+2018-03-01 00:35:48,202 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:48,419 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:49,180 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:49,333 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:50,704 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:51,231 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 00:35:52,155 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:00,635 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:01,015 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 07:32:01,568 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:01,841 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 07:32:03,012 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:03,928 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:05,063 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:06,336 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:06,568 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:07,327 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_1YHTT4
+2018-03-01 07:32:07,679 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:07,850 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:08,204 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:08,377 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:09,589 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:10,202 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 07:32:10,988 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:06:35,000 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:06:35,676 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 08:06:35,888 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:06:36,126 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 08:06:37,768 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:06:38,636 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:06:39,812 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:09:19,343 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:09:19,699 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 08:09:20,197 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:09:20,517 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 08:09:21,478 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:09:22,515 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:09:23,589 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:39,620 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:39,944 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 08:10:40,223 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:40,468 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 08:10:41,641 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:42,492 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:43,862 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:45,648 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:45,993 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:47,280 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_1X3YLL
+2018-03-01 08:10:47,782 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:48,000 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:48,434 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:48,708 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:50,247 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:50,917 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:10:51,991 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:15:42,713 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:15:43,255 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 08:15:43,515 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:15:43,748 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 08:15:46,755 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:15:54,681 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:15:56,421 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:07,327 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:07,686 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:08,938 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_10WDAL
+2018-03-01 08:16:09,269 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:09,802 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:10,156 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:10,619 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:12,236 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:13,269 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:16:14,038 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:27,559 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:28,354 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: alyapine
+2018-03-01 08:21:28,588 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:28,920 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: 3psdpsdpsd3
+2018-03-01 08:21:30,088 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:31,517 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:33,400 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:34,932 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:35,547 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 08:21:36,637 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_1CSKDP
+2018-03-01 08:21:36,952 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element

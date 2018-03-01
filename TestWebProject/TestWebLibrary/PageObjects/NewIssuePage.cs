@@ -15,14 +15,16 @@ namespace TestWebLibrary.PageObjects
 	{
 
 	    private static readonly By newissuelabel = By.XPath("//h2");
-        private readonly BaseElement issueprojectelement = new BaseElement(By.XPath("//*[@id='issue_project_id']"));
-		private readonly BaseElement trackerelement = new BaseElement(By.XPath("//*[@id='issue_tracker_id']")); 
+        private readonly BaseElement issueprojectelement = new BaseElement(By.XPath("//*[@id='issue_project_id']/option[2]"));
+		private readonly BaseElement trackerelement = new BaseElement(By.XPath("//*[@id='issue_tracker_id']/option[1]")); 
         private readonly BaseElement issuesubjectfield = new BaseElement(By.XPath("//*[@id='issue_subject']")); 
-		private readonly BaseElement issuestatus = new BaseElement(By.XPath("//*[@id='issue_status_id']")); 
-		private readonly BaseElement issuepriority = new BaseElement(By.XPath("//*[@id='issue_priority_id']"));
+		private readonly BaseElement issuestatus = new BaseElement(By.XPath("//*[@id='issue_status_id']/option[1]")); 
+		private readonly BaseElement issuepriority = new BaseElement(By.XPath("//*[@id='issue_priority_id']/option[3]"));
 	    private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
 	    private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
-
+	    private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
+        //private readonly BaseElement flashnotice = new BaseElement(By.XPath("//*[@id='flash_notice']//*[@title='some_valid_subj1']"));
+	    public string prjname;
         //private readonly string newissuesubject = ConfigManager.IssueSubject;
 
         public NewIssuePage():base (newissuelabel, "New issue")
@@ -34,9 +36,17 @@ namespace TestWebLibrary.PageObjects
 		public NewIssuePage ChooseProject()
 		{
 			 this.issueprojectelement.Click();
-			 return new NewIssuePage();
+             prjname = this.issueprojectelement.GetText();
+             return new NewIssuePage();
               
 		}
+
+
+
+	    public string GetProjectName()
+	    {
+            return  this.issueprojectelement.GetText();
+	    }
 
 		public NewIssuePage CreateTracker()
 		{
@@ -65,8 +75,27 @@ namespace TestWebLibrary.PageObjects
 		}
 
 
-		 
+	    public void Create()
+	    {
+	        this.createbutton.Click();
+	    }
 
- 
-	}
+	    public NewIssuePage CreateProjectAndContinue()
+	    {
+	        this.createandcontinuebutton.Click();
+	        return new NewIssuePage();
+	    }
+
+	    public ProjectsPage GoToProjectsPage()
+	    {
+            this.projectelement.Click();
+	        return new ProjectsPage();
+	    }
+
+	    public void CheckIsFlashNoticeDisplayed(string title)
+	    {
+            
+	    }
+
+    }
 }

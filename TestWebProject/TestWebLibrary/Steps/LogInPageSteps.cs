@@ -43,10 +43,14 @@ namespace TestWebLibrary.Steps
 	        _issuesPage = _projectsPage.ClickToViewIssues();
         }
 
-		public static void CreateNewIssue(string subject)
+		public static void CreateAndCheckNewIssue(string subject, string projname)
 		{
-			_newissuePage = _issuesPage.ClickToCreateNewIssuePage().EnterSubject(subject).ChooseProject().CreateTracker()
-				.ChooseIssuePriority().ChooseIssueStatus();
+		    //string prj = _newissuePage.GetProjectName();
+		    _newissuePage = _issuesPage.ClickToCreateNewIssuePage().EnterSubject(subject).ChooseProject();
+		    string prj = _newissuePage.prjname;
+            _activityPage = _newissuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue().GoToProjectsPage().ViewOverallactivity();
+            _activityPage.CheckIsNewIssueNoteIsPresent(prj);
+           // _newissuePage.CheckIsFlashNoticeDisplayed(flashnotice);
 
 		}
 
