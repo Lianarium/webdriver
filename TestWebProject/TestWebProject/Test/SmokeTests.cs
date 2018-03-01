@@ -12,6 +12,7 @@ using System.Configuration;
 using log4net.Config;
 using TestWebProject;
 using NUnit.Framework;
+using TestWebLibrary.Models;
 using TestWebLibrary.PageObjects;
 using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
@@ -26,37 +27,46 @@ namespace TestWebProject.Test
         [Test]
         public void LogInTest()
         {
-            LogInPageSteps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+			LogInPageSteps step = new LogInPageSteps();
+            step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
         }
 
         [Test]
         public void HomePageTest()
         {
-            LogInPageSteps.GoToProjectsPage();
+			LogInPageSteps step = new LogInPageSteps();
+            step.GoToProjectsPage();
+			Assert.AreEqual();
         }
 
         [Test]
         public void NewProjectTest()
         {
-            LogInPageSteps.GoToProjectsPage();
-            LogInPageSteps.CreateNewProject(ConfigManager.ProjectName+Randomiser.GetRandomString(5), ConfigManager.ProjectIdentifier);
+	        string projectname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
+			Project project = new Project(projectname);
+	        LogInPageSteps step = new LogInPageSteps();
+			step.GoToProjectsPage();
+            step.CreateNewProject(project);
         }
 
         [Test]
         public void NewIssueTest()
 
         {
+			
             string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
-            LogInPageSteps.GoToProjectsPage();
+	        Issue issue = new Issue(IssueSubj);
+			LogInPageSteps.GoToProjectsPage();
 			LogInPageSteps.GoToIssuesPage();
-			LogInPageSteps.CreateAndCheckNewIssue(IssueSubj, BaseTest.projname);
+			LogInPageSteps.CreateNewIssue(issue);
 
         }
 
         [Test]
         public void ActivityTest()
         {
-             
+			LogInPageSteps.GoToProjectsPage();
+	        LogInPageSteps.GoToActivityPage();
         }
     }
 }

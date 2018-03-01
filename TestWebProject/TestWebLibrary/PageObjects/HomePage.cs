@@ -22,7 +22,7 @@ namespace TestWebProject
 		private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
 		 
 
-		public HomePage():base(homelabel, "Home Page")
+		public HomePage():base(homelabel, "Home")
 		{
 			 
 		}

@@ -11,7 +11,8 @@ namespace TestWebLibrary.PageObjects
     public class ProjectsPage:BasePage
     {
         private static readonly By projectslabel = By.XPath("//h2");
-        private readonly BaseElement newprojectelement = new BaseElement(By.XPath("//*[@class='icon icon-add']"));
+	    private readonly BaseElement projectslabelElement = new BaseElement(By.XPath("//h2"));
+		private readonly BaseElement newprojectelement = new BaseElement(By.XPath("//*[@class='icon icon-add']"));
         private readonly BaseElement viewallissueselement = new BaseElement(By.XPath("//*[@href='/issues']"));
         private readonly BaseElement overallactivityelement = new BaseElement(By.XPath("//*[@href='/activity']"));
         //private readonly BaseElement homepagetitleframe = new BaseElement(By.Id("content"));
@@ -20,6 +21,12 @@ namespace TestWebLibrary.PageObjects
         {
 
         }
+
+
+	    public string GetProjectsLabelText()
+	    {
+		    return projectslabelElement.GetText();
+	    }
 
         public NewProjectPage ClickToCreateNewProject()
         {

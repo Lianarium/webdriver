@@ -20,6 +20,7 @@ namespace TestWebLibrary.PageObjects
 		{
 		    this.TitleLocator = TitleLocator;
 		    this.Title = TitlePage = title;
+			Logger.Log.Info(title + " was opened");
 		}
 
 	    public void AssertIsOpened()

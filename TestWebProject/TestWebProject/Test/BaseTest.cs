@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using log4net.Config;
 using NUnit.Framework;
+using NUnit.Framework.Internal;
 using TestWebLibrary.BrowserWork;
 using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
+ 
 
 namespace TestWebProject.Test
 {
@@ -19,7 +21,8 @@ namespace TestWebProject.Test
         [OneTimeSetUp]
         public virtual void InitializeTest()
         {
-	        XmlConfigurator.Configure();//Logging!
+
+	        XmlConfigurator.Configure();//Logging
 			Browser = Browser.Instance;
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);

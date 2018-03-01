@@ -27,7 +27,7 @@ namespace TestWebLibrary.PageObjects
        public Size Size { get; }
        public bool Displayed { get; }
 
-	   private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+	   
 	    
 		public BaseElement(By locator):this(locator, null)
        {
@@ -40,11 +40,6 @@ namespace TestWebLibrary.PageObjects
            this.Name = name == "" ? this.GetText() : name;
        }
 
-       public IWebElement GetElement()
-       {
-          // this.Element = Browser.GetDriver().FindElement(this.Locator);
-           return new BaseElement(this.Locator);
-       }
 
         public string GetText()
         {
@@ -59,7 +54,7 @@ namespace TestWebLibrary.PageObjects
 
        public IWebElement FindElement(By @by)
        {
-           throw new NotImplementedException();
+			return new BaseElement(this.Locator);
        }
 
        public ReadOnlyCollection<IWebElement> FindElements(By @by)
@@ -75,13 +70,16 @@ namespace TestWebLibrary.PageObjects
 
        public void SendKeys(string text)
        {
+	        Logger.InitLogger();
 			this.WaitForElementIsVisible();
-	        Browser.GetDriver().FindElement(this.Locator).SendKeys(text);
-	        this.log.Info("Text input: "  + text);
+			//Browser.GetDriver().FindElement(this.Locator).SendKeys(text);
+			Browser.GetDriver().FindElement(this.Locator).SendKeys(text);
+			Logger.Log.Info("Text input: "  + text);
        }
 
        public void Submit()
        {
+
 
 			this.WaitForElementIsVisible();
 	        Browser.GetDriver().FindElement(this.Locator).Submit();
@@ -89,9 +87,10 @@ namespace TestWebLibrary.PageObjects
 
        public void Click()
        {
-            this.WaitForElementIsVisible();
+	        Logger.InitLogger();
+			this.WaitForElementIsVisible();
 		    Browser.GetDriver().FindElement(this.Locator).Click();
-            this.log.Info("Clicked " + " element");
+            Logger.Log.Info("Clicked " + " element");
        }
 
        public string GetAttribute(string attributeName)

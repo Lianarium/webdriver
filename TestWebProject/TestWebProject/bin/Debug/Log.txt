@@ -704,3 +704,247 @@
 2018-03-01 08:21:35,547 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
 2018-03-01 08:21:36,637 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Text input: some_valid_subject_1_1CSKDP
 2018-03-01 08:21:36,952 [NonParallelWorker] INFO  TestWebLibrary.PageObjects.BaseElement Clicked  element
+2018-03-01 10:31:20,100 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:31:37,082 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:31:46,031 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:32:16,637 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:16,400 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:16,482 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:33:16,567 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:16,632 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:33:17,025 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:46,108 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:46,197 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:33:46,281 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:46,344 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:33:46,720 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:33:47,034 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:40:34,652 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:40:34,735 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:40:34,820 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:40:34,884 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:40:35,241 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:40:35,568 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:41:01,331 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:41:01,419 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:41:01,502 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:41:01,567 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:41:01,942 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:41:02,600 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:10,122 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:10,205 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:44:10,288 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:10,351 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:44:10,739 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:11,117 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:11,580 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:11,673 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:11,809 [NonParallelWorker] INFO  LOGGER Text input: Projectproject11551B8V0
+2018-03-01 10:44:12,539 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:27,772 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:27,857 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:44:27,942 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:28,008 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:44:28,360 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:46,661 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:46,745 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:44:46,833 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:46,895 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:44:47,289 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:47,594 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:48,038 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:48,642 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:48,739 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:48,864 [NonParallelWorker] INFO  LOGGER Text input: some_valid_subject_1_17V1J5
+2018-03-01 10:44:48,946 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:49,055 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:44:49,123 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:45:31,247 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:45:31,339 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:45:31,423 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:45:31,494 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:45:31,826 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:46:29,954 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:46:30,040 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:46:30,125 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:46:30,189 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:46:30,530 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:40,877 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:40,967 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:53:41,043 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:41,107 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:53:41,466 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:41,774 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:42,213 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:42,297 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:53:42,442 [NonParallelWorker] INFO  LOGGER Text input: Projectproject11556FXD1
+2018-03-01 10:53:42,959 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:57:28,023 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:57:28,105 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:57:28,187 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:57:28,248 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:57:28,617 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:57:28,898 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:59:34,639 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:59:34,724 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 10:59:34,810 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:59:34,873 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 10:59:35,269 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 10:59:35,576 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:02:28,693 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:02:28,777 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:02:28,859 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:02:28,923 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:02:29,282 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:02:29,616 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:03:33,368 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:03:33,450 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:03:33,536 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:03:33,597 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:03:33,982 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:03:34,309 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:04:49,962 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,971 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,972 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,972 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,973 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,973 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:49,977 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:50,083 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:04:50,153 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:04:50,154 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:50,235 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:04:50,302 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:04:50,303 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:50,699 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:04:50,700 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:04:51,996 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:04:51,996 [NonParallelWorker] INFO  LOGGER Opened 
+2018-03-01 11:06:40,403 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:06:40,488 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:06:40,570 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:06:40,639 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:06:41,001 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:06:41,320 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:07:41,063 [NonParallelWorker] INFO  LOGGER Log in pageWas opened
+2018-03-01 11:07:41,072 [NonParallelWorker] INFO  LOGGER HomeWas opened
+2018-03-01 11:07:41,073 [NonParallelWorker] INFO  LOGGER ProjectsWas opened
+2018-03-01 11:07:41,074 [NonParallelWorker] INFO  LOGGER New Project PageWas opened
+2018-03-01 11:07:41,074 [NonParallelWorker] INFO  LOGGER IssuesWas opened
+2018-03-01 11:07:41,075 [NonParallelWorker] INFO  LOGGER New issueWas opened
+2018-03-01 11:07:41,075 [NonParallelWorker] INFO  LOGGER ActivityWas opened
+2018-03-01 11:07:41,174 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:07:41,247 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:07:41,248 [NonParallelWorker] INFO  LOGGER Log in pageWas opened
+2018-03-01 11:07:41,327 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:07:41,389 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:07:41,389 [NonParallelWorker] INFO  LOGGER Log in pageWas opened
+2018-03-01 11:07:41,746 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:07:41,747 [NonParallelWorker] INFO  LOGGER HomeWas opened
+2018-03-01 11:07:42,045 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:07:42,046 [NonParallelWorker] INFO  LOGGER ProjectsWas opened
+2018-03-01 11:09:53,625 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 11:09:53,635 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 11:09:53,635 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 11:09:53,636 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 11:09:53,636 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 11:09:53,637 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 11:09:53,637 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 11:09:53,736 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:20:36,902 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 11:20:36,912 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 11:20:36,913 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 11:20:36,913 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 11:20:36,914 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 11:20:36,914 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 11:20:36,915 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 11:20:37,013 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:20:37,085 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 11:20:37,085 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 11:20:37,163 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:20:37,228 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 11:20:37,229 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 11:20:37,680 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 11:20:37,681 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:21:50,443 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:21:50,453 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:21:50,454 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:21:50,454 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:21:50,455 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 15:21:50,455 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 15:21:50,456 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 15:21:50,568 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:21:50,650 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 15:21:50,650 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:21:50,731 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:21:50,789 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 15:21:50,790 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:21:51,395 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:21:51,395 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:21:51,986 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:21:51,987 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:21:53,555 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:21:53,556 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 15:32:56,282 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:32:56,292 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:32:56,293 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:32:56,293 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:32:56,294 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 15:32:56,295 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 15:32:56,296 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 15:32:56,411 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:32:56,493 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 15:32:56,493 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:32:56,575 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:32:56,642 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 15:32:56,643 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:32:57,258 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:32:57,259 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:32:57,842 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:32:57,843 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:32:59,890 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:32:59,891 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:32:59,991 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:33:00,090 [NonParallelWorker] INFO  LOGGER Text input: FHIBX
+2018-03-01 15:33:00,091 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:33:01,028 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:33:01,029 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:08,946 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:08,958 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:39:08,959 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:39:08,960 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:08,961 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 15:39:08,962 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 15:39:08,963 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 15:39:09,066 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:09,145 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 15:39:09,146 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:09,226 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:09,298 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 15:39:09,298 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:09,925 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:09,926 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:39:10,526 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:10,526 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:39:11,710 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:11,711 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:11,799 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:11,952 [NonParallelWorker] INFO  LOGGER Text input: Projectproject1155VZ9B8
+2018-03-01 15:39:11,952 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:13,251 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:13,252 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:23,593 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:23,605 [NonParallelWorker] INFO  LOGGER Home was opened
+2018-03-01 15:39:23,605 [NonParallelWorker] INFO  LOGGER Projects was opened
+2018-03-01 15:39:23,606 [NonParallelWorker] INFO  LOGGER New Project Page was opened
+2018-03-01 15:39:23,607 [NonParallelWorker] INFO  LOGGER Issues was opened
+2018-03-01 15:39:23,612 [NonParallelWorker] INFO  LOGGER New issue was opened
+2018-03-01 15:39:23,614 [NonParallelWorker] INFO  LOGGER Activity was opened
+2018-03-01 15:39:23,716 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:23,800 [NonParallelWorker] INFO  LOGGER Text input: alyapine
+2018-03-01 15:39:23,801 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:23,882 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:23,948 [NonParallelWorker] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-01 15:39:23,949 [NonParallelWorker] INFO  LOGGER Log in page was opened
+2018-03-01 15:39:25,869 [NonParallelWorker] INFO  LOGGER Clicked  element
+2018-03-01 15:39:25,870 [NonParallelWorker] INFO  LOGGER Home was opened

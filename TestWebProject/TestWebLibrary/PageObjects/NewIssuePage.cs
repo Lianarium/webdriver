@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestWebLibrary.Models;
 using TestWebLibrary.Utils;
 
 namespace TestWebLibrary.PageObjects
@@ -25,8 +26,11 @@ namespace TestWebLibrary.PageObjects
 	    private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
         //private readonly BaseElement flashnotice = new BaseElement(By.XPath("//*[@id='flash_notice']//*[@title='some_valid_subj1']"));
 	    public string prjname;
-        //private readonly string newissuesubject = ConfigManager.IssueSubject;
 
+		 
+		 
+        //private readonly string newissuesubject = ConfigManager.IssueSubject;
+        
         public NewIssuePage():base (newissuelabel, "New issue")
 		{
 			 
@@ -56,7 +60,7 @@ namespace TestWebLibrary.PageObjects
 		}
 
 		public NewIssuePage EnterSubject(string subject)
-		{
+		{        
 			 this.issuesubjectfield.Click();
              this.issuesubjectfield.SendKeys(subject);
 			 return new NewIssuePage();
