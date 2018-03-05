@@ -13,6 +13,8 @@ using TestWebLibrary.Utils;
 
 namespace TestWebProject.Test
 {
+    [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class BaseTest
     {
         protected static Browser Browser = Browser.Instance;
@@ -23,7 +25,7 @@ namespace TestWebProject.Test
         {
 
 	        XmlConfigurator.Configure();//Logging
-			Browser = Browser.Instance;
+			Browser = Browser.Instance; 
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);
         }
@@ -31,8 +33,9 @@ namespace TestWebProject.Test
 	    [SetUp]
 		public void LogIn()
 	    {
-			 LogInPageSteps.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
-	         projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
+	        LogInPageSteps step = new LogInPageSteps();
+            step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+	        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 	    }
 
         [OneTimeTearDown]

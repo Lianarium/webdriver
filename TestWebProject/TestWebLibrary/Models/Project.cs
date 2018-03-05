@@ -8,8 +8,8 @@ namespace TestWebLibrary.Models
 {
 	public class Project
 	{
-		private string name;
-		private string id;
+		private string _name;
+		 
 
 		public Project(string name)
 		{
@@ -21,12 +21,12 @@ namespace TestWebLibrary.Models
 		{
 			get
 			{
-				return name;
+				return _name;
 			}
 
 			set
 			{
-				name = value;
+				_name = value;
 			}
 		}
 

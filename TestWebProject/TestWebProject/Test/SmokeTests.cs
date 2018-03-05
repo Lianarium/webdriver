@@ -20,6 +20,7 @@ using TestWebLibrary.Utils;
 namespace TestWebProject.Test
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class SmokeTests : BaseTest
     {
 
@@ -36,7 +37,7 @@ namespace TestWebProject.Test
         {
 			LogInPageSteps step = new LogInPageSteps();
             step.GoToProjectsPage();
-			Assert.AreEqual();
+			 
         }
 
         [Test]
@@ -49,24 +50,7 @@ namespace TestWebProject.Test
             step.CreateNewProject(project);
         }
 
-        [Test]
-        public void NewIssueTest()
-
-        {
-			
-            string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
-	        Issue issue = new Issue(IssueSubj);
-			LogInPageSteps.GoToProjectsPage();
-			LogInPageSteps.GoToIssuesPage();
-			LogInPageSteps.CreateNewIssue(issue);
-
-        }
-
-        [Test]
-        public void ActivityTest()
-        {
-			LogInPageSteps.GoToProjectsPage();
-	        LogInPageSteps.GoToActivityPage();
-        }
+       
+        
     }
 }
