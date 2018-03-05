@@ -8,5 +8,6 @@ namespace TestWebLibrary.Steps
 {
 	public class IssuesPageSteps
 	{
+
 	}
 }

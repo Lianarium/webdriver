@@ -28,6 +28,7 @@ namespace TestWebProject.Test
         [Test]
         public void LogInTest()
         {
+	        SetUp.LoginCondition = true;
 			LogInPageSteps step = new LogInPageSteps();
             step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
         }
@@ -45,7 +46,7 @@ namespace TestWebProject.Test
         {
 	        string projectname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 			Project project = new Project(projectname);
-	        LogInPageSteps step = new LogInPageSteps();
+	        CreateNewProjectSteps step = new CreateNewProjectSteps();
 			step.GoToProjectsPage();
             step.CreateNewProject(project);
         }

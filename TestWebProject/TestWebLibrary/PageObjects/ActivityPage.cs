@@ -21,15 +21,9 @@ namespace TestWebLibrary.PageObjects
 		}
 
 
-	   /* public void CheckIsProjectNotePresent(string projname)
-	    {
-		    string projectnote = issueprojectnote.GetText();
-            Assert.AreEqual(projectnote, projname);
-	    }*/
-
 		public void CheckIsNewIssueNoteIsPresent(string name)
 		{
-		    var attribute = issueprojectnote.GetText();
+		    var attribute = issueprojectnote.Text;
 		    Assert.AreEqual(attribute,name);
 		}
 

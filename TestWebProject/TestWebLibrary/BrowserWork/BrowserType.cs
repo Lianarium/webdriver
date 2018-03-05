@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestWebLibrary.Steps
+namespace TestWebLibrary.BrowserWork
 {
-	public class NewProjectPageSteps
+	public enum BrowserType
 	{
+		Chrome,
+		Firefox
 	}
 }

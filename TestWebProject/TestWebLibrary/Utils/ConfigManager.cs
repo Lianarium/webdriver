@@ -21,9 +21,9 @@ namespace TestWebLibrary.Utils
 	    public static string ProjectName => GetConfigvalueNoDefault("project_name");
 	    public static string ProjectIdentifier => GetConfigvalueNoDefault("project_identifier");
 	    public static string IssueSubject => GetConfigvalueNoDefault("issue_subject");
-
-
-        private static string GetConfigvalue(string key, string defaultvalue)
+		public static string SetUpLogin => GetConfigvalue("setuplogin", "false");
+		 
+		private static string GetConfigvalue(string key, string defaultvalue)
 		 {
 			  return ConfigurationSettings.AppSettings[key] ?? defaultvalue;
 		 }

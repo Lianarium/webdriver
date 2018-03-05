@@ -22,6 +22,7 @@ namespace TestWebLibrary.Steps
 		private  ActivityPage _activityPage = new ActivityPage();
 
 
+	 
         public HomePage LogIn(string login, string password)
 		{
 		    _homePage = _loginPage.FillLoginField(login).FillPasswordField(password).ClickToLogIn();
@@ -43,26 +44,8 @@ namespace TestWebLibrary.Steps
 
 		}
 
-		public void CreateNewProject(Project project)
-	    {
-		    _newprojectPage = _projectsPage.ClickToCreateNewProject().EnterProjectName(project.Name).CreateProjectAndContinue();
-	    }
+		 
 
-	    public  void GoToIssuesPage()
-	    {
-	        _issuesPage = _projectsPage.ClickToViewIssues();
-        }
-
-		public  void CreateNewIssue(Issue issue)
-		{
-		   
-		    _newissuePage = _issuesPage.ClickToCreateNewIssuePage().EnterSubject(issue.Subject).ChooseProject();
-		    string prj = _newissuePage.prjname;
-            _activityPage = _newissuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue().GoToProjectsPage().ViewOverallactivity();
-            _activityPage.CheckIsNewIssueNoteIsPresent(prj);
-            
-
-		}
 
 	    public  void GoToActivityPage()
 	    {

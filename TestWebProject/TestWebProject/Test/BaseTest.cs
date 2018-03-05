@@ -31,12 +31,18 @@ namespace TestWebProject.Test
         }
 
 	    [SetUp]
-		public void LogIn()
+	    public void LogIn()
 	    {
-	        LogInPageSteps step = new LogInPageSteps();
-            step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
-	        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
-	    }
+
+		    SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
+		    if (SetUp.LoginCondition == true)//if we need to log in before performing test
+		    {
+			    LogInPageSteps step = new LogInPageSteps();
+		        step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+		        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
+	        }
+
+      }
 
         [OneTimeTearDown]
         public virtual void CleanTest()

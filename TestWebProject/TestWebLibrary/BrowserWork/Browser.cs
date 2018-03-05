@@ -8,15 +8,15 @@ using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using TestWebLibrary.Utils;
-
+ 
 namespace TestWebLibrary.BrowserWork
 {
-	public class Browser
+	public class Browser 
 	{
 
 	    private static Browser currentInstance;
 	    private static IWebDriver driver;
-	    public static BrowserFactory.BrowserType CurrentBrowser;
+	    public static  BrowserType CurrentBrowser;
 	    public static int ImplicitWait;
 	    public static double TimeoutForElement;
 	    private static string browsername;
@@ -33,7 +33,7 @@ namespace TestWebLibrary.BrowserWork
 	    private Browser()
 	    {
 	        InitParameters();
-	        driver = BrowserFactory.GetDriver(CurrentBrowser, ImplicitWait);
+	        driver = DriverFactory.GetDriver(CurrentBrowser, ImplicitWait);
 
 	    }
 
@@ -52,8 +52,10 @@ namespace TestWebLibrary.BrowserWork
 	        return driver;
 
 	    }
+	    
 
-	    public static void WindowMaximize()
+
+		public static void WindowMaximize()
 	    {
             driver.Manage().Window.Maximize();
 	    }

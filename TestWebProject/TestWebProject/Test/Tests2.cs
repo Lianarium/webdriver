@@ -21,8 +21,9 @@ namespace TestWebProject.Test
 
             string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
             Issue issue = new Issue(IssueSubj);
-            LogInPageSteps step = new LogInPageSteps();
-            step.GoToProjectsPage();
+            CreateNewIssueSteps step = new CreateNewIssueSteps();
+			CreateNewProjectSteps step1 = new CreateNewProjectSteps();
+            step1.GoToProjectsPage();
             step.GoToIssuesPage();
             step.CreateNewIssue(issue);
 
