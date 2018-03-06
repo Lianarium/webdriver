@@ -12,8 +12,15 @@ namespace TestWebLibrary.BrowserWork
 	public interface IBrowser
 	{
 
-		 
+		void InitParameters();
 
+		IWebDriver GetDriver();
+
+		void WindowMaximize();
+
+		void NavigateTo();
+
+		void Quit();
 
 	}
 }

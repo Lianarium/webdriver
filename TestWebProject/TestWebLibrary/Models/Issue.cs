@@ -15,7 +15,7 @@ namespace TestWebLibrary.Models
 			this.Subject = val;
 		}
 
-		public string Subject
+		public string Subject//auto prop
 		{
 			get
 			{

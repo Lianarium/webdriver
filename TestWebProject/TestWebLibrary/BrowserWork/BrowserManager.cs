@@ -13,13 +13,18 @@ namespace TestWebLibrary.BrowserWork
 	public class BrowserManager
 	{
 	    private static BrowserType type;
-
-		public static string GetBrowser()
+		 
+		public static  string GetBrowserName()
 		{
 		    if (type.ToString() == "Chrome" || type.ToString() == "Firefox")
 		        return type.ToString();
 		    else
 		        return ConfigManager.ConfigBrowser;
+		}
+
+		public static Browser GetBrowser()
+		{
+			return Browser.Instance;
 		}
 	}
 }

@@ -2153,3 +2153,183 @@
 2018-03-06 01:11:49,966 [ParallelWorker#1] INFO  LOGGER Projects was opened
 2018-03-06 01:11:50,938 [ParallelWorker#1] INFO  LOGGER Clicked  element
 2018-03-06 01:11:50,939 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:57:09,560 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:09,571 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:09,572 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:09,573 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 09:57:09,573 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 09:57:09,574 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:09,575 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:57:09,678 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:09,752 [ParallelWorker#4] INFO  LOGGER Text input: alyapine
+2018-03-06 09:57:09,753 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:09,828 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:09,889 [ParallelWorker#4] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 09:57:09,889 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:10,411 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:10,412 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:10,419 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:10,420 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:10,420 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:10,421 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 09:57:10,421 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 09:57:10,421 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:10,422 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:57:10,937 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:10,938 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:11,481 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:11,482 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:57:21,313 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:21,323 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:21,324 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:21,325 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 09:57:21,325 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 09:57:21,326 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:21,326 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:57:21,425 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:21,499 [ParallelWorker#4] INFO  LOGGER Text input: alyapine
+2018-03-06 09:57:21,500 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:21,579 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:21,641 [ParallelWorker#4] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 09:57:21,641 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:22,163 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:22,164 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:22,171 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 09:57:22,172 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 09:57:22,173 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:22,173 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 09:57:22,173 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 09:57:22,174 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:22,174 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:57:22,669 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:22,670 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:23,596 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:23,597 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 09:57:24,347 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,348 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:24,436 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,572 [ParallelWorker#4] INFO  LOGGER Text input: some_valid_subject_1_1CHU0L
+2018-03-06 09:57:24,572 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:24,643 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,684 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:24,751 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,751 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:24,821 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,821 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:24,889 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:24,890 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:25,739 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:25,740 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 09:57:26,083 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:26,083 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 09:57:26,599 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 09:57:26,599 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 09:58:13,120 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:13,139 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:13,140 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:13,141 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:13,142 [ParallelWorker#1] INFO  LOGGER Issues was opened
+2018-03-06 09:58:13,142 [ParallelWorker#1] INFO  LOGGER New issue was opened
+2018-03-06 09:58:13,143 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:58:13,419 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:13,469 [ParallelWorker#1] INFO  LOGGER Text input: alyapine
+2018-03-06 09:58:13,470 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:13,720 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:13,757 [ParallelWorker#1] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 09:58:13,758 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:14,081 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:14,081 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:14,088 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:14,089 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:14,089 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:14,089 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:14,090 [ParallelWorker#1] INFO  LOGGER Issues was opened
+2018-03-06 09:58:14,090 [ParallelWorker#1] INFO  LOGGER New issue was opened
+2018-03-06 09:58:14,090 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:58:14,409 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:14,410 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:14,738 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:14,738 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:58:24,357 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:24,367 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:24,368 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:24,369 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:24,369 [ParallelWorker#1] INFO  LOGGER Issues was opened
+2018-03-06 09:58:24,370 [ParallelWorker#1] INFO  LOGGER New issue was opened
+2018-03-06 09:58:24,374 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:58:24,656 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:24,719 [ParallelWorker#1] INFO  LOGGER Text input: alyapine
+2018-03-06 09:58:24,719 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:24,970 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:25,029 [ParallelWorker#1] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 09:58:25,029 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:25,376 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:25,377 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:25,383 [ParallelWorker#1] INFO  LOGGER Log in page was opened
+2018-03-06 09:58:25,383 [ParallelWorker#1] INFO  LOGGER Home was opened
+2018-03-06 09:58:25,384 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:25,384 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:25,384 [ParallelWorker#1] INFO  LOGGER Issues was opened
+2018-03-06 09:58:25,385 [ParallelWorker#1] INFO  LOGGER New issue was opened
+2018-03-06 09:58:25,385 [ParallelWorker#1] INFO  LOGGER Activity was opened
+2018-03-06 09:58:25,801 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:25,802 [ParallelWorker#1] INFO  LOGGER Projects was opened
+2018-03-06 09:58:26,518 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:26,519 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:26,771 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:26,827 [ParallelWorker#1] INFO  LOGGER Text input: Projectproject11556FY9U
+2018-03-06 09:58:26,827 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 09:58:27,654 [ParallelWorker#1] INFO  LOGGER Clicked  element
+2018-03-06 09:58:27,655 [ParallelWorker#1] INFO  LOGGER New Project Page was opened
+2018-03-06 10:00:48,451 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 10:00:48,465 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 10:00:48,466 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 10:00:48,467 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 10:00:48,467 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 10:00:48,468 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 10:00:48,469 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 10:00:48,739 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 10:00:48,798 [ParallelWorker#4] INFO  LOGGER Text input: alyapine
+2018-03-06 10:00:48,798 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 10:00:49,040 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 10:00:49,103 [ParallelWorker#4] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 10:00:49,104 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 10:00:49,394 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 10:00:49,395 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 10:00:49,401 [ParallelWorker#4] INFO  LOGGER Log in page was opened
+2018-03-06 10:00:49,402 [ParallelWorker#4] INFO  LOGGER Home was opened
+2018-03-06 10:00:49,402 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 10:00:49,404 [ParallelWorker#4] INFO  LOGGER New Project Page was opened
+2018-03-06 10:00:49,404 [ParallelWorker#4] INFO  LOGGER Issues was opened
+2018-03-06 10:00:49,405 [ParallelWorker#4] INFO  LOGGER New issue was opened
+2018-03-06 10:00:49,406 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 10:00:49,780 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 10:00:49,780 [ParallelWorker#4] INFO  LOGGER Projects was opened
+2018-03-06 10:00:50,097 [ParallelWorker#4] INFO  LOGGER Clicked  element
+2018-03-06 10:00:50,098 [ParallelWorker#4] INFO  LOGGER Activity was opened
+2018-03-06 10:23:30,935 [ParallelWorker#2] INFO  LOGGER Log in page was opened
+2018-03-06 10:23:30,948 [ParallelWorker#2] INFO  LOGGER Home was opened
+2018-03-06 10:23:30,949 [ParallelWorker#2] INFO  LOGGER Projects was opened
+2018-03-06 10:23:30,950 [ParallelWorker#2] INFO  LOGGER New Project Page was opened
+2018-03-06 10:23:30,951 [ParallelWorker#2] INFO  LOGGER Issues was opened
+2018-03-06 10:23:30,952 [ParallelWorker#2] INFO  LOGGER New issue was opened
+2018-03-06 10:23:30,953 [ParallelWorker#2] INFO  LOGGER Activity was opened
+2018-03-06 10:23:31,053 [ParallelWorker#2] INFO  LOGGER Clicked  element
+2018-03-06 10:23:31,129 [ParallelWorker#2] INFO  LOGGER Text input: alyapine
+2018-03-06 10:23:31,130 [ParallelWorker#2] INFO  LOGGER Log in page was opened
+2018-03-06 10:23:31,208 [ParallelWorker#2] INFO  LOGGER Clicked  element
+2018-03-06 10:23:31,275 [ParallelWorker#2] INFO  LOGGER Text input: 3psdpsdpsd3
+2018-03-06 10:23:31,276 [ParallelWorker#2] INFO  LOGGER Log in page was opened
+2018-03-06 10:23:31,775 [ParallelWorker#2] INFO  LOGGER Clicked  element
+2018-03-06 10:23:31,776 [ParallelWorker#2] INFO  LOGGER Home was opened
+2018-03-06 10:23:31,783 [ParallelWorker#2] INFO  LOGGER Log in page was opened
+2018-03-06 10:23:31,783 [ParallelWorker#2] INFO  LOGGER Home was opened
+2018-03-06 10:23:31,784 [ParallelWorker#2] INFO  LOGGER Projects was opened
+2018-03-06 10:23:31,784 [ParallelWorker#2] INFO  LOGGER New Project Page was opened
+2018-03-06 10:23:31,784 [ParallelWorker#2] INFO  LOGGER Issues was opened
+2018-03-06 10:23:31,784 [ParallelWorker#2] INFO  LOGGER New issue was opened
+2018-03-06 10:23:31,785 [ParallelWorker#2] INFO  LOGGER Activity was opened
+2018-03-06 10:23:32,289 [ParallelWorker#2] INFO  LOGGER Clicked  element
+2018-03-06 10:23:32,289 [ParallelWorker#2] INFO  LOGGER Projects was opened
+2018-03-06 10:23:32,871 [ParallelWorker#2] INFO  LOGGER Clicked  element
+2018-03-06 10:23:32,872 [ParallelWorker#2] INFO  LOGGER Activity was opened

@@ -23,7 +23,7 @@ namespace TestWebLibrary.BrowserWork
 	    private Browser()
 	    {
 	        InitParameters();
-	        CurrentBrowser = BrowserManager.GetBrowser();
+	        CurrentBrowser = BrowserManager.GetBrowserName();
 	        driver = DriverFactory.GetDriver(CurrentBrowser, ImplicitWait);
 
 	    }

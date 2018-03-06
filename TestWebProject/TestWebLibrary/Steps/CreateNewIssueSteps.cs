@@ -12,7 +12,7 @@ namespace TestWebLibrary.Steps
 	public class CreateNewIssueSteps:BaseStep
 	{
 
-	    public void GoToProjectsPage()
+	    public void GoToProjectsPage()//create navigation manager
 	    {
 
 	        ProjectsPage = HomePage.ClickProjectLink();

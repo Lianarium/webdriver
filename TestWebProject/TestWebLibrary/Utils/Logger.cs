@@ -10,7 +10,7 @@ using log4net.Config;
 
 namespace TestWebLibrary
 {
-	public class Logger
+	public  class Logger
 	{
 		 
 			private static ILog log = LogManager.GetLogger("LOGGER");

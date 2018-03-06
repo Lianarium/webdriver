@@ -9,7 +9,8 @@ using NUnit.Framework.Internal;
 using TestWebLibrary.BrowserWork;
 using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
- 
+using Logger = TestWebLibrary.Logger;
+
 
 namespace TestWebProject.Test
 {
@@ -19,23 +20,24 @@ namespace TestWebProject.Test
     {
         protected static Browser Browser = Browser.Instance;
         protected static string projname;
+	    protected bool IsLoginReuired = true;
 
         [OneTimeSetUp]
         public virtual void InitializeTest()
         {
-
-	        XmlConfigurator.Configure();//Logging
-			Browser = Browser.Instance; 
+	        Logger.InitLogger();
+			Browser = BrowserManager.GetBrowser();
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);
-        }
+	        
+		}
 
 	    [SetUp]
 	    public void LogIn()
 	    {
 
 		    SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
-		    if (SetUp.LoginCondition == true)//if we need to log in before performing test
+		    if (IsLoginReuired)//if we need to log in before performing test
 		    {
 			    LogInSteps step = new LogInSteps();
 		        step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);

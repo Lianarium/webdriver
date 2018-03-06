@@ -30,9 +30,6 @@ namespace TestWebLibrary.PageObjects
             return new NewIssuePage();
 	    }
 
-	    public void GetSubjectColumn()
-	    {
-           this.
-	    }
+	    
     }
 }

@@ -23,9 +23,12 @@ namespace TestWebProject.Test
     [Parallelizable(ParallelScope.All)]
     public class SmokeTests : BaseTest
     {
+	    public SmokeTests()
+	    {
+		    IsLoginReuired = false;
+	    }
 
-
-        [Test]
+		[Test]
         public void LogInTest()
         {
 	        SetUp.LoginCondition = true;

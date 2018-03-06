@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using TestWebLibrary;
 using TestWebLibrary.Models;
 using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
@@ -12,13 +14,14 @@ namespace TestWebProject.Test
 {
     [TestFixture]
     [Parallelizable(ParallelScope.All)]
-    public class Tests2 : BaseTest
+    public class IssueTests : BaseTest
     {
         [Test]
         public void NewIssueTest()
 
         {
-            string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
+	      
+			string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
             Issue issue = new Issue(IssueSubj);
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
             testcase.GoToProjectsPage();
@@ -35,7 +38,7 @@ namespace TestWebProject.Test
             ViewActivitySteps testcase = new ViewActivitySteps();
             testcase.GoToProjectsPage();
             testcase.GoToActivityPage();
-             
+            //Assert.AreEqual("Activity", );
         }
     }
 }

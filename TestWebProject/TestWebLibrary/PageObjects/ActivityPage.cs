@@ -22,10 +22,10 @@ namespace TestWebLibrary.PageObjects
 
 	    public string ReturnNewIssueNote()
 		{
-		    var attribute = issueprojectnote.Text;
+		    string attribute = issueprojectnote.Text;
 		    return attribute;
 		}
 
-
+ 
 	}
 }

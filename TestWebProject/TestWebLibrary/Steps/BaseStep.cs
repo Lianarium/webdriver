@@ -8,7 +8,7 @@ using TestWebProject;
 
 namespace TestWebLibrary.Steps
 {
-    public abstract class BaseStep
+    public abstract class BaseStep//here I can keep nav manager instance
     {
         protected LogInPage LoginPage = new LogInPage();
         protected HomePage  HomePage = new HomePage();
