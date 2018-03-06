@@ -16,23 +16,14 @@ namespace TestWebLibrary.BrowserWork
 
 	    private static Browser currentInstance;
 	    private static IWebDriver driver;
-	    public static  BrowserType CurrentBrowser;
+	    public static  string CurrentBrowser;
 	    public static int ImplicitWait;
 	    public static double TimeoutForElement;
-	    private static string browsername;
-	    public string BrowserName
-	    { get
-	        {
-	            return browsername;
-	        }
-	        set
-	        {
-	            browsername = value;
-	        }}
-	    
+	     
 	    private Browser()
 	    {
 	        InitParameters();
+	        CurrentBrowser = BrowserManager.GetBrowser();
 	        driver = DriverFactory.GetDriver(CurrentBrowser, ImplicitWait);
 
 	    }

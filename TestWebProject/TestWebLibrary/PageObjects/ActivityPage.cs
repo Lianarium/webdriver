@@ -20,11 +20,10 @@ namespace TestWebLibrary.PageObjects
 
 		}
 
-
-		public void CheckIsNewIssueNoteIsPresent(string name)
+	    public string ReturnNewIssueNote()
 		{
 		    var attribute = issueprojectnote.Text;
-		    Assert.AreEqual(attribute,name);
+		    return attribute;
 		}
 
 

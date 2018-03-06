@@ -29,26 +29,20 @@ namespace TestWebProject.Test
         public void LogInTest()
         {
 	        SetUp.LoginCondition = true;
-			LogInPageSteps step = new LogInPageSteps();
+			LogInSteps step = new LogInSteps();
             step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
         }
 
-        [Test]
-        public void HomePageTest()
-        {
-			LogInPageSteps step = new LogInPageSteps();
-            step.GoToProjectsPage();
-			 
-        }
+     
 
         [Test]
         public void NewProjectTest()
         {
 	        string projectname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 			Project project = new Project(projectname);
-	        CreateNewProjectSteps step = new CreateNewProjectSteps();
-			step.GoToProjectsPage();
-            step.CreateNewProject(project);
+	        CreateNewProjectSteps testcase = new CreateNewProjectSteps();
+			testcase.GoToProjectsPage();
+            testcase.CreateNewProject(project);
         }
 
        

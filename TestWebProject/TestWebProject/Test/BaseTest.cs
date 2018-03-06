@@ -37,7 +37,7 @@ namespace TestWebProject.Test
 		    SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
 		    if (SetUp.LoginCondition == true)//if we need to log in before performing test
 		    {
-			    LogInPageSteps step = new LogInPageSteps();
+			    LogInSteps step = new LogInSteps();
 		        step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
 		        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 	        }

@@ -13,7 +13,7 @@ namespace TestWebLibrary.Utils
     public class ConfigManager
 	{
 		public static string ConfigUrl => GetConfigvalueNoDefault("startURL");
-		public static string ConfigBrowser => GetConfigvalue("browser", "Chrome");
+		public static string ConfigBrowser => GetConfigvalue("defaultbrowser", "Chrome");
 		public static string ConfigLogin => GetConfigvalue("login", "alyapine" );
 		public static string ConfigPassword => GetConfigvalue("password", "3psdpsdpsd3");
 	    public static string ElementTimeout => GetConfigvalue("element_timeout", "30");

@@ -18,23 +18,24 @@ namespace TestWebProject.Test
         public void NewIssueTest()
 
         {
-
             string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
             Issue issue = new Issue(IssueSubj);
-            CreateNewIssueSteps step = new CreateNewIssueSteps();
-			CreateNewProjectSteps step1 = new CreateNewProjectSteps();
-            step1.GoToProjectsPage();
-            step.GoToIssuesPage();
-            step.CreateNewIssue(issue);
+            CreateNewIssueSteps testcase = new CreateNewIssueSteps();
+            testcase.GoToProjectsPage();
+            testcase.GoToIssuesPage();
+            testcase.CreateNewIssue(issue);
+            
+            Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote());
 
         }
 
         [Test]
         public void ActivityTest()
         {
-            LogInPageSteps step = new LogInPageSteps();
-            step.GoToProjectsPage();
-            step.GoToActivityPage();
+            ViewActivitySteps testcase = new ViewActivitySteps();
+            testcase.GoToProjectsPage();
+            testcase.GoToActivityPage();
+             
         }
     }
 }

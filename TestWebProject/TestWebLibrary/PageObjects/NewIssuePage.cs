@@ -24,8 +24,9 @@ namespace TestWebLibrary.PageObjects
 	    private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
 	    private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
 	    private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
+	   
         //private readonly BaseElement flashnotice = new BaseElement(By.XPath("//*[@id='flash_notice']//*[@title='some_valid_subj1']"));
-	    public string prjname;
+        public string prjname;
 
 		 
 		 

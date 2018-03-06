@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BrowserWork\Browser.cs" />
-    <Compile Include="BrowserWork\BrowserFactory.cs" />
+    <Compile Include="BrowserWork\BrowserManager.cs" />
     <Compile Include="BrowserWork\BrowserType.cs" />
     <Compile Include="BrowserWork\DriverFactory.cs" />
     <Compile Include="BrowserWork\IBrowser.cs" />
@@ -69,13 +69,12 @@
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="PageObjects\ProjectsPage.cs" />
-    <Compile Include="Steps\ActivityPageSteps.cs" />
-    <Compile Include="Steps\HomePageSteps.cs" />
+    <Compile Include="Steps\ViewActivitySteps.cs" />
+    <Compile Include="Steps\BaseStep.cs" />
     <Compile Include="Steps\IssuesPageSteps.cs" />
-    <Compile Include="Steps\LogInPageSteps.cs" />
+    <Compile Include="Steps\LogInSteps.cs" />
     <Compile Include="Steps\CreateNewIssueSteps.cs" />
     <Compile Include="Steps\CreateNewProjectSteps.cs" />
-    <Compile Include="Steps\StepsToReachPagesByURL.cs" />
     <Compile Include="Utils\ConfigManager.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="PageObjects\ActivityPage.cs" />

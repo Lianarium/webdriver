@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace TestWebLibrary.PageObjects
@@ -12,6 +13,10 @@ namespace TestWebLibrary.PageObjects
 	    private static readonly By issueslabel = By.XPath("//h2");
 
 	    private readonly BaseElement newissuelink = new BaseElement(By.XPath("//*[@class='icon icon-add new-issue']"));
+
+	    protected List SubjectColumn = new List();
+
+	    private readonly BaseElement subjects = new BaseElement(By.XPath("//*[@class='subject']"));
 
         public IssuesPage() : base(issueslabel, "Issues")
 	    {
@@ -25,5 +30,9 @@ namespace TestWebLibrary.PageObjects
             return new NewIssuePage();
 	    }
 
+	    public void GetSubjectColumn()
+	    {
+           this.
+	    }
     }
 }

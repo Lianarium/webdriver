@@ -9,30 +9,38 @@ using TestWebProject;
 
 namespace TestWebLibrary.Steps
 {
-	public class CreateNewIssueSteps
+	public class CreateNewIssueSteps:BaseStep
 	{
-		private LogInPage _loginPage = new LogInPage();
-		private HomePage _homePage = new HomePage();
-		private ProjectsPage _projectsPage = new ProjectsPage();
-		private NewProjectPage _newprojectPage = new NewProjectPage();
-		private IssuesPage _issuesPage = new IssuesPage();
-		private NewIssuePage _newissuePage = new NewIssuePage();
-		private ActivityPage _activityPage = new ActivityPage();
 
-		public void GoToIssuesPage()
+	    public void GoToProjectsPage()
+	    {
+
+	        ProjectsPage = HomePage.ClickProjectLink();
+
+	    }
+
+        public void GoToIssuesPage()
 		{
-			_issuesPage = _projectsPage.ClickToViewIssues();
+			IssuesPage = ProjectsPage.ClickToViewIssues();
 		}
 
 		public void CreateNewIssue(Issue issue)
 		{
 
-			_newissuePage = _issuesPage.ClickToCreateNewIssuePage().EnterSubject(issue.Subject).ChooseProject();
-			string prj = _newissuePage.prjname;
-			_activityPage = _newissuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue().GoToProjectsPage().ViewOverallactivity();
-			_activityPage.CheckIsNewIssueNoteIsPresent(prj);
-
+			NewIssuePage = IssuesPage.ClickToCreateNewIssuePage().EnterSubject(issue.Subject).ChooseProject();
+			string prj =  NewIssuePage.prjname;
+			NewIssuePage = NewIssuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue();
+			//return ActivityPage.ReturnNewIssueNote();
 
 		}
+
+	    public string GetIssueNote()
+	    {
+
+	        ActivityPage = NewIssuePage.GoToProjectsPage().ViewOverallactivity();
+	        string text =  ActivityPage.ReturnNewIssueNote();
+	        return text;
+
+	    }
 	}
 }

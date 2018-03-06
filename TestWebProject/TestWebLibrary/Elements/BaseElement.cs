@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -8,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using log4net;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using TestWebLibrary.BrowserWork;
@@ -59,7 +61,11 @@ namespace TestWebLibrary.PageObjects
 
        public ReadOnlyCollection<IWebElement> FindElements(By @by)
        {
-           throw new NotImplementedException();
+           List<IWebElement> list = new List<IWebElement>();
+           ReadOnlyCollection<IWebElement> collection = new ReadOnlyCollection<IWebElement>(list);
+           list.Add(new BaseElement(this.Locator));
+           return collection;
+
        }
 
        public void Clear()
