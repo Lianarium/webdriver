@@ -20,9 +20,9 @@ namespace TestWebLibrary.Steps
 
 	    }
 
-        public HomePage LogIn(string login, string password)
+        public HomePage LogIn(User user)
 		{
-		    HomePage = LoginPage.FillLoginField(login).FillPasswordField(password).ClickToLogIn();
+		    HomePage = LoginPage.FillLoginField(user.Login).FillPasswordField(user.Password).ClickToLogIn();
 			return HomePage;  
 		}
 

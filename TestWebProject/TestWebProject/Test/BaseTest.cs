@@ -7,6 +7,7 @@ using log4net.Config;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 using TestWebLibrary.BrowserWork;
+using TestWebLibrary.Models;
 using TestWebLibrary.Steps;
 using TestWebLibrary.Utils;
 using Logger = TestWebLibrary.Logger;
@@ -39,8 +40,9 @@ namespace TestWebProject.Test
 		    SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
 		    if (IsLoginReuired)//if we need to log in before performing test
 		    {
-			    LogInSteps step = new LogInSteps();
-		        step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+			    User user = new User(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+				LogInSteps step = new LogInSteps();
+		        step.LogIn(user);
 		        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 	        }
 

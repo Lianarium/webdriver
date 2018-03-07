@@ -8,26 +8,16 @@ namespace TestWebLibrary.Models
 {
 	public class Issue
 	{
-		private string subject;
+		 
 
 		public Issue(string val)
 		{
 			this.Subject = val;
 		}
 
-		public string Subject//auto prop
-		{
-			get
-			{
-				return subject;
-			}
+		public string Subject { get; set; }
 
-			set
-			{
-				subject = value;
-			}
-		}
 
-		
+
 	}
 }

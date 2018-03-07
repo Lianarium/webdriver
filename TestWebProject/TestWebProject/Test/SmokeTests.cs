@@ -31,9 +31,10 @@ namespace TestWebProject.Test
 		[Test]
         public void LogInTest()
         {
+			User user = new User(ConfigManager.ConfigLogin,ConfigManager.ConfigPassword);
 	        SetUp.LoginCondition = true;
 			LogInSteps step = new LogInSteps();
-            step.LogIn(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+            step.LogIn(user);
         }
 
      

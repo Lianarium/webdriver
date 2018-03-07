@@ -8,29 +8,14 @@ namespace TestWebLibrary.Models
 {
 	public class Project
 	{
-		private string _name;
 		 
-
-		public Project(string name)
+       	public Project(string name)
 		{
 			this.Name = name;
 			 
 		}
 
-		public string Name
-		{
-			get
-			{
-				return _name;
-			}
-
-			set
-			{
-				_name = value;
-			}
-		}
-
-		 
+	  public string Name { get; set; }
 		 
 
 	}
