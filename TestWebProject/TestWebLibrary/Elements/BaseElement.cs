@@ -65,7 +65,6 @@ namespace TestWebLibrary.PageObjects
            ReadOnlyCollection<IWebElement> collection = new ReadOnlyCollection<IWebElement>(list);
            list.Add(new BaseElement(this.Locator));
            return collection;
-
        }
 
        public void Clear()

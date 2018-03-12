@@ -44,7 +44,7 @@ namespace TestWebLibrary.PageObjects
         public ActivityPage ViewOverallactivity()
         {
             this.overallactivityelement.Click();
-            return  new ActivityPage();
+            return new ActivityPage();
         }
 
         

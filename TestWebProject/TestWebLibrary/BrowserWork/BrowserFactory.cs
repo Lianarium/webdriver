@@ -11,10 +11,11 @@ using TestWebLibrary.Utils;
 
 namespace TestWebLibrary.BrowserWork
 {
-	public class BrowserFactory : IBrowser
+	public class BrowserFactory  
 	{
 	    private static BrowserType type;
 		 
+
 		public static  string GetBrowserName()
 		{
 		    if (type.ToString() == "Chrome" || type.ToString() == "Firefox")
@@ -23,35 +24,6 @@ namespace TestWebLibrary.BrowserWork
 		        return ConfigManager.ConfigBrowser;
 		}
 
-	    public void InitParameters()
-	    {
-	        throw new NotImplementedException();
-	    }
-
-	    public IWebDriver GetDriver()
-	    {
-	        throw new NotImplementedException();
-	    }
-
-	    Browser IBrowser.GetBrowser()
-	    {
-	        return GetBrowser();
-	    }
-
-	    public void WindowMaximize()
-	    {
-	        throw new NotImplementedException();
-	    }
-
-	    public void NavigateTo()
-	    {
-	        throw new NotImplementedException();
-	    }
-
-	    public void Quit()
-	    {
-	        throw new NotImplementedException();
-	    }
 
 	    public static Browser GetBrowser()
 		{

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestWebLibrary.Models;
 
 namespace TestWebLibrary.PageObjects
 {
@@ -15,6 +16,7 @@ namespace TestWebLibrary.PageObjects
         protected string Title;
 	    public static string TitlePage;
 		//private IWebDriver driver;
+		protected readonly BaseElement titlelement = new BaseElement(By.XPath("//h2"));//TITLE ELEMENT OF THE PAGE
 
 		protected BasePage(By TitleLocator, string title)
 		{
@@ -29,6 +31,12 @@ namespace TestWebLibrary.PageObjects
 	      label.WaitForElementIsVisible();
 
 	    }
+
+		public PageTitle GetTitle()
+		{
+			PageTitle pageTitle = new PageTitle(titlelement.GetText());
+			return pageTitle;
+		}
 
 		public void isElementVisible(IWebDriver driver,By element, int timeoutSecs = 10)
 		{ 

@@ -19,17 +19,34 @@ namespace TestWebLibrary.Steps
 			NewIssuePage = IssuesPage.ClickToCreateNewIssuePage().EnterSubject(issue.Subject).ChooseProject();
 			string prj =  NewIssuePage.prjname;
 			NewIssuePage = NewIssuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue();
-			//return ActivityPage.ReturnNewIssueNote();
+			 
 
 		}
 
-	    public string GetIssueNote()
+	    public Issue GetIssueNote()
 	    {
 
-	        ActivityPage = NewIssuePage.GoToProjectsPage().ViewOverallactivity();
-	        string text =  ActivityPage.ReturnNewIssueNote();
-	        return text;
+			ActivityPage = NewIssuePage.GoToProjectsPage().ViewOverallactivity();
+			Issue issue = new Issue("subj");
+	        issue =  ActivityPage.ReturnNewIssueNote(issue);
+	        return issue;
 
 	    }
+
+		public bool IsTrue()
+		{
+			return ActivityPage.IsPresentNote();
+		}
+
+		public string Text()
+		{
+			return ActivityPage.Notetext();
+		}
+
+		public string IssueNumber()
+		{
+			return NewIssuePage.GetIssueNumber();
+		}
 	}
+
 }

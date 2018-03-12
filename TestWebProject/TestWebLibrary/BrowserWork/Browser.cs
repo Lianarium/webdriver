@@ -28,12 +28,11 @@ namespace TestWebLibrary.BrowserWork
 
 	    }
 
-	    private static void InitParameters()
+
+	    public void InitParameters()
 	    {
 	        ImplicitWait = Convert.ToInt32(ConfigManager.ImplicitWait);
 	        TimeoutForElement = Convert.ToDouble(ConfigManager.ElementTimeout);
-	         
-	       
 	    }
 
 	    IWebDriver IBrowser.GetDriver()
@@ -41,56 +40,30 @@ namespace TestWebLibrary.BrowserWork
 	        return GetDriver();
 	    }
 
-	    public Browser GetBrowser()
-	    {
-	        throw new NotImplementedException();
-	    }
 
-	    void IBrowser.WindowMaximize()
+	   public  void  WindowMaximize()
 	    {
-	        WindowMaximize();
-	    }
+			driver.Manage().Window.Maximize();
+		}
 
-	    public void NavigateTo()
+	    public void NavigateTo(string url)
 	    {
-	        throw new NotImplementedException();
-	    }
+			driver.Navigate().GoToUrl(url);
+		}
 
 	    void IBrowser.Quit()
 	    {
-	        Quit();
-	    }
+			driver.Quit();
+		    currentInstance = null;
+		}
+
 
 	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());
+ 
 
-	    void IBrowser.InitParameters()
-	    {
-	        InitParameters();
-	    }
-
-	    public static IWebDriver GetDriver()
+	    public static IWebDriver GetDriver()//wtf
 	    {
 	        return driver;
-
-	    }
-	    
-
-
-		public static void WindowMaximize()
-	    {
-            driver.Manage().Window.Maximize();
-	    }
-
-	    public static void NavigateTo(string url)
-	    {
-	        driver.Navigate().GoToUrl(url);
-	    }
-
-       
-	    public static void Quit()
-	    {
-             driver.Quit();
-	         currentInstance = null;
-	    }
+	    }	    
     }
 }

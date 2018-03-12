@@ -19,18 +19,16 @@ namespace TestWebProject.Test
     [Parallelizable(ParallelScope.All)]
     public class BaseTest
     {
-        protected static Browser Browser = Browser.Instance;
-        protected static IBrowser Ibrowser = new BrowserFactory();
+        //protected static Browser Browser = Browser.Instance;
+        protected static IBrowser Browser = BrowserFactory.GetBrowser();
         protected static string projname;
-	    protected bool IsLoginReuired = true;
+	    protected bool IsLoginRequired = true;
          
         [OneTimeSetUp]
         public virtual void InitializeTest()
         {   
 
 	        Logger.InitLogger();
-			Browser = Ibrowser.GetBrowser();
-           
             Browser.WindowMaximize();
             Browser.NavigateTo(ConfigManager.ConfigUrl);
 	        
@@ -40,10 +38,10 @@ namespace TestWebProject.Test
 	    public void LogIn()
         { 
             SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
-		    if (IsLoginReuired)//if we need to log in before performing test
+		    if (IsLoginRequired)//if we need to log in before performing test
 		    {
 			    User user = new User(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
-				LogInSteps step = new LogInSteps();
+				CheckLogInSteps step = new CheckLogInSteps();
 		        step.LogIn(user);
 		        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 	        }

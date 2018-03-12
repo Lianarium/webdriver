@@ -24,9 +24,10 @@ namespace TestWebLibrary.PageObjects
 	    private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
 	    private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@name = 'continue']"));
 	    private readonly BaseElement projectelement = new BaseElement(By.XPath("//*[@class='projects']"));
-	   
-        //private readonly BaseElement flashnotice = new BaseElement(By.XPath("//*[@id='flash_notice']//*[@title='some_valid_subj1']"));
-        public string prjname;
+		private readonly BaseElement issuewascreated = new BaseElement(By.XPath("//*[@class='flash notice']//*"));
+
+		//private readonly BaseElement flashnotice = new BaseElement(By.XPath("//*[@id='flash_notice']//*[@title='some_valid_subj1']"));
+		public string prjname;
 
 		 
 		 
@@ -96,6 +97,11 @@ namespace TestWebLibrary.PageObjects
             this.projectelement.Click();
 	        return new ProjectsPage();
 	    }
+
+		public string GetIssueNumber()
+		{
+			return issuewascreated.GetText();
+		}
 
 	    public void CheckIsFlashNoticeDisplayed(string title)
 	    {

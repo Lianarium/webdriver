@@ -18,15 +18,33 @@ namespace TestWebLibrary.PageObjects
 		private readonly BaseElement namefield = new BaseElement(By.XPath("//*[@id='project_name']"));
         private readonly BaseElement identifierfield = new BaseElement(By.Id("//*[@id='project_identifier']"));
 		private readonly BaseElement createbutton = new BaseElement(By.XPath("//*[@name = 'commit']"));
-		private readonly BaseElement success = new BaseElement(By.XPath("//*[@id = 'flash_notice']"));
+		private readonly BaseElement successelement = new BaseElement(By.XPath("//*[@id = 'flash_notice']"));
+		private readonly BaseElement errorelementname = new BaseElement(By.XPath("//*[@id = 'errorExplanation']//ul//li"));
 		private readonly BaseElement createandcontinuebutton = new BaseElement(By.XPath("//*[@value = 'Create and continue']"));
 	    
+
         public NewProjectPage():base(newproject,"New Project Page")
 		{
 			 
 		}
 
-		 
+
+		public string GetSuccessMessage()
+		{
+			string message = successelement.GetText();
+			return message;
+		}
+
+		public string GetErrorMessage()
+		{
+			string message = errorelementname.GetText();
+			return message;
+		}
+
+		public bool CheckErrorName()
+		{
+			return this.errorelementname.Displayed;
+		}
 
 		public NewProjectPage EnterProjectName(string projectname)
 		{

@@ -11,14 +11,9 @@ using TestWebProject;
 
 namespace TestWebLibrary.Steps
 {
-	public class LogInSteps : BaseStep//PageObjects Wrapper
+	public class CheckLogInSteps : BaseStep//PageObjects Wrapper
 	{
 	     
-
-	    public LogInSteps() : base()
-	    {
-
-	    }
 
         public HomePage LogIn(User user)
 		{
@@ -26,5 +21,11 @@ namespace TestWebLibrary.Steps
 			return HomePage;  
 		}
 
+		
+		public HomePage GetExpectedHomePage()
+		{
+			 HomePage homepage = new HomePage();
+			 return homepage;
+		}
     }
 }

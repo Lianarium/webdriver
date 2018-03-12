@@ -16,11 +16,11 @@ namespace TestWebLibrary.BrowserWork
 
 		IWebDriver GetDriver();
 
-	    Browser GetBrowser();
+	    //Browser GetBrowser();
 
 		void WindowMaximize();
 
-		void NavigateTo();
+		void NavigateTo(string url);
 
 		void Quit();
 

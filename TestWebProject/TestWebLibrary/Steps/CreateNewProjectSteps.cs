@@ -12,11 +12,18 @@ namespace TestWebLibrary.Steps
 	public class CreateNewProjectSteps:BaseStep
 	{
 
-		public void CreateNewProject(Project project)
+		public NewProjectPage CreateNewProject(Project project)
 		{
 			NewProjectPage = ProjectsPage.ClickToCreateNewProject().EnterProjectName(project.Name).CreateProjectAndContinue();
+			return NewProjectPage;
 		}
+ 
 
+		public NewProjectPage GetExpectedNewProjectPage()
+		{
+			NewProjectPage newprojpage = new NewProjectPage();
+			return newprojpage;
+		}
 
 	}
 }

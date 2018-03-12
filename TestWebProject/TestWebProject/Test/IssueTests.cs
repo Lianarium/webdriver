@@ -26,19 +26,25 @@ namespace TestWebProject.Test
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
             BaseStep.Navmanager.GoToProjectsPage();
             BaseStep.Navmanager.GoToIssuesPage();
+
             testcase.CreateNewIssue(issue);
-            
-            Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote());
+			BaseStep.Navmanager.GoToProjectsPage();
+			// Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().Notetext());
+			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().Notetext().Contains(IssueSubj));
+	        //Assert.AreEqual(IssueSubj, BaseStep.Navmanager.GoToActivityPage().Notetext());
 
-        }
+			//Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote().Subject);
 
+
+		}
+/*
         [Test]
         public void ActivityTest()
         {
             ViewActivitySteps testcase = new ViewActivitySteps();
             BaseStep.Navmanager.GoToProjectsPage();
-            BaseStep.Navmanager.GoToActivityPage();
-            //Assert.AreEqual("Activity", );
-        }
+            Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().Notetext());
+	        Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().Notetext().Contains());
+		}*/
     }
 }
