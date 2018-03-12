@@ -61,10 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BrowserWork\Browser.cs" />
-    <Compile Include="BrowserWork\BrowserManager.cs" />
+    <Compile Include="BrowserWork\BrowserFactory.cs" />
     <Compile Include="BrowserWork\BrowserType.cs" />
     <Compile Include="BrowserWork\DriverFactory.cs" />
     <Compile Include="BrowserWork\IBrowser.cs" />
+    <Compile Include="BrowserWork\Window.cs" />
     <Compile Include="Elements\BaseElement.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\Project.cs" />

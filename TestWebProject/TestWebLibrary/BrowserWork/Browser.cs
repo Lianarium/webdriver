@@ -11,7 +11,7 @@ using TestWebLibrary.Utils;
  
 namespace TestWebLibrary.BrowserWork
 {
-	public class Browser 
+	public class Browser : IBrowser
 	{
 
 	    private static Browser currentInstance;
@@ -23,7 +23,7 @@ namespace TestWebLibrary.BrowserWork
 	    private Browser()
 	    {
 	        InitParameters();
-	        CurrentBrowser = BrowserManager.GetBrowserName();
+	        CurrentBrowser = BrowserFactory.GetBrowserName();
 	        driver = DriverFactory.GetDriver(CurrentBrowser, ImplicitWait);
 
 	    }
@@ -36,7 +36,37 @@ namespace TestWebLibrary.BrowserWork
 	       
 	    }
 
+	    IWebDriver IBrowser.GetDriver()
+	    {
+	        return GetDriver();
+	    }
+
+	    public Browser GetBrowser()
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    void IBrowser.WindowMaximize()
+	    {
+	        WindowMaximize();
+	    }
+
+	    public void NavigateTo()
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    void IBrowser.Quit()
+	    {
+	        Quit();
+	    }
+
 	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());
+
+	    void IBrowser.InitParameters()
+	    {
+	        InitParameters();
+	    }
 
 	    public static IWebDriver GetDriver()
 	    {

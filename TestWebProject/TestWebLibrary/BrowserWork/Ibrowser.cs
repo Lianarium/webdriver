@@ -16,6 +16,8 @@ namespace TestWebLibrary.BrowserWork
 
 		IWebDriver GetDriver();
 
+	    Browser GetBrowser();
+
 		void WindowMaximize();
 
 		void NavigateTo();

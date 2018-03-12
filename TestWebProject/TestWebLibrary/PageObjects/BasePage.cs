@@ -14,7 +14,7 @@ namespace TestWebLibrary.PageObjects
         protected By TitleLocator;
         protected string Title;
 	    public static string TitlePage;
-		private IWebDriver driver;
+		//private IWebDriver driver;
 
 		protected BasePage(By TitleLocator, string title)
 		{

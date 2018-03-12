@@ -10,17 +10,7 @@ namespace TestWebLibrary.Steps
 	public class ViewActivitySteps:BaseStep
 	{
 
-	    public void GoToProjectsPage()
-	    {
-
-	        ProjectsPage = HomePage.ClickProjectLink();
-
-	    }
-
-        public void GoToActivityPage()
-	    {
-	        ActivityPage = ProjectsPage.ViewOverallactivity();
-	    }
+	     
 
 
     }

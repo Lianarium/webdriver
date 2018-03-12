@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TestWebLibrary.PageObjects;
+using TestWebLibrary.Utils;
 using TestWebProject;
 
 namespace TestWebLibrary.Steps
@@ -17,6 +18,7 @@ namespace TestWebLibrary.Steps
         protected IssuesPage IssuesPage = new IssuesPage();
         protected NewIssuePage NewIssuePage = new NewIssuePage();
         protected ActivityPage ActivityPage = new ActivityPage();
+        public static NavigationManager  Navmanager = new NavigationManager();
 
         protected BaseStep()
         {

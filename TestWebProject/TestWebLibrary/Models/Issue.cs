@@ -17,7 +17,13 @@ namespace TestWebLibrary.Models
 
 		public string Subject { get; set; }
 
+	    public override bool Equals(object obj)
+	    {
+	        if (obj.GetType() != this.GetType()) return false;
 
+	        Issue issue = (Issue)obj;
+	        return (this.Subject == issue.Subject);
+	    }
 
-	}
+    }
 }

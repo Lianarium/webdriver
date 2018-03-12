@@ -25,7 +25,7 @@ namespace TestWebProject.Test
     {
 	    public SmokeTests()
 	    {
-		    IsLoginReuired = false;
+		    IsLoginReuired = true;
 	    }
 
 		[Test]
@@ -45,7 +45,7 @@ namespace TestWebProject.Test
 	        string projectname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
 			Project project = new Project(projectname);
 	        CreateNewProjectSteps testcase = new CreateNewProjectSteps();
-			testcase.GoToProjectsPage();
+			BaseStep.Navmanager.GoToProjectsPage();
             testcase.CreateNewProject(project);
         }
 

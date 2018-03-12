@@ -11,13 +11,6 @@ namespace TestWebLibrary.Steps
 {
 	public class CreateNewProjectSteps:BaseStep
 	{
-		 
-		public void GoToProjectsPage()
-		{
-
-			ProjectsPage = HomePage.ClickProjectLink();
-
-		}
 
 		public void CreateNewProject(Project project)
 		{

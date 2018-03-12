@@ -20,12 +20,12 @@ namespace TestWebProject.Test
         public void NewIssueTest()
 
         {
-	      
-			string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
+
+            string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
             Issue issue = new Issue(IssueSubj);
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
-            testcase.GoToProjectsPage();
-            testcase.GoToIssuesPage();
+            BaseStep.Navmanager.GoToProjectsPage();
+            BaseStep.Navmanager.GoToIssuesPage();
             testcase.CreateNewIssue(issue);
             
             Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote());
@@ -36,8 +36,8 @@ namespace TestWebProject.Test
         public void ActivityTest()
         {
             ViewActivitySteps testcase = new ViewActivitySteps();
-            testcase.GoToProjectsPage();
-            testcase.GoToActivityPage();
+            BaseStep.Navmanager.GoToProjectsPage();
+            BaseStep.Navmanager.GoToActivityPage();
             //Assert.AreEqual("Activity", );
         }
     }
