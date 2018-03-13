@@ -8,7 +8,7 @@ namespace TestWebLibrary.BrowserWork
 {
 	public enum BrowserType
 	{
-	    Firefox,
-		Chrome
+	    Chrome,
+        Firefox
 	}
 }
