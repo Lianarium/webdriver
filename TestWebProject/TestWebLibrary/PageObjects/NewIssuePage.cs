@@ -100,7 +100,9 @@ namespace TestWebLibrary.PageObjects
 
 		public string GetIssueNumber()
 		{
-			return issuewascreated.GetText();
+			string issuenumbersharp = issuewascreated.GetText();
+			string issuenumber = issuenumbersharp.Trim(new Char[] {' ', '#'});
+			return issuenumber;
 		}
 
 	    public void CheckIsFlashNoticeDisplayed(string title)

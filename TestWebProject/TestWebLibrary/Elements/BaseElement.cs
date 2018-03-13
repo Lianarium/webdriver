@@ -6,6 +6,7 @@ using System.Collections.Specialized;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using log4net;
@@ -20,7 +21,7 @@ namespace TestWebLibrary.PageObjects
    {
        protected string Name;
        protected By Locator;
-      // protected IWebElement Element;
+       protected IWebElement Element;
        public string TagName { get; }
 	   public string Text { get; }
        public bool Enabled { get; }
@@ -28,9 +29,9 @@ namespace TestWebLibrary.PageObjects
        public Point Location { get; }
        public Size Size { get; }
        public bool Displayed { get; }
+	   List<IWebElement> list = new List<IWebElement>();
 
-	   
-	    
+
 		public BaseElement(By locator):this(locator, null)
        {
            this.Locator = locator;
@@ -61,10 +62,7 @@ namespace TestWebLibrary.PageObjects
 
        public ReadOnlyCollection<IWebElement> FindElements(By @by)
        {
-           List<IWebElement> list = new List<IWebElement>();
-           ReadOnlyCollection<IWebElement> collection = new ReadOnlyCollection<IWebElement>(list);
-           list.Add(new BaseElement(this.Locator));
-           return collection;
+		       return Browser.GetDriver().FindElements(by);//finally!
        }
 
        public void Clear()

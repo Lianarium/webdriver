@@ -37,7 +37,7 @@ namespace TestWebProject.Test
 	    [SetUp]
 	    public void setName()
 	    {
-		    Projectname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
+		    Projectname = TestData.ProjectName + Randomiser.GetRandomString(5);
 		}
 
         [Test]

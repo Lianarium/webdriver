@@ -38,7 +38,7 @@ namespace TestWebLibrary.PageObjects
 			return pageTitle;
 		}
 
-		public void isElementVisible(IWebDriver driver,By element, int timeoutSecs = 10)
+		public void isElementVisible(IWebDriver driver,By element, int timeoutSecs = 10)//protected bool  !!!!
 		{ 
 			new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSecs)).Until(ExpectedConditions.ElementIsVisible(element));
 		}

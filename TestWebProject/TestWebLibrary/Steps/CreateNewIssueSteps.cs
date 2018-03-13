@@ -13,17 +13,17 @@ namespace TestWebLibrary.Steps
 	{
 
 	     
-		public void CreateNewIssue(Issue issue)
+		public NewIssuePage CreateNewIssue(Issue issue)
 		{
 
 			NewIssuePage = IssuesPage.ClickToCreateNewIssuePage().EnterSubject(issue.Subject).ChooseProject();
 			string prj =  NewIssuePage.prjname;
 			NewIssuePage = NewIssuePage.CreateTracker().ChooseIssuePriority().ChooseIssueStatus().CreateProjectAndContinue();
-			 
+			return NewIssuePage;
 
 		}
 
-	    public Issue GetIssueNote()
+	   /* public Issue GetIssueNote()
 	    {
 
 			ActivityPage = NewIssuePage.GoToProjectsPage().ViewOverallactivity();
@@ -31,16 +31,13 @@ namespace TestWebLibrary.Steps
 	        issue =  ActivityPage.ReturnNewIssueNote(issue);
 	        return issue;
 
-	    }
+	    }*/
 
-		public bool IsTrue()
-		{
-			return ActivityPage.IsPresentNote();
-		}
+	 
 
-		public string Text()
+		public Note GetNote(string number)
 		{
-			return ActivityPage.Notetext();
+			return ActivityPage.GetCreatedIssueNote(number);
 		}
 
 		public string IssueNumber()

@@ -8,7 +8,7 @@ using TestWebProject;
 
 namespace TestWebLibrary.Utils
 {
-	public class NavigationManager
+	public class NavigationManager//static
 	{
 
 	    protected LogInPage LoginPage = new LogInPage();
@@ -26,7 +26,7 @@ namespace TestWebLibrary.Utils
 
 	    public ProjectsPage GoToProjectsPage( )  
 	    {
-            //ProjectsPage projectspage = new ProjectsPage();
+          //check if we are on the proper page
 	        return HomePage.ClickProjectLink();
 	    }
 

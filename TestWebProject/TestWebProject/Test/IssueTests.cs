@@ -17,20 +17,22 @@ namespace TestWebProject.Test
     public class IssueTests : BaseTest
     {
         [Test]
-        public void NewIssueTest()
-
+        public void NewIssuePresenceTest()
         {
 
-            string IssueSubj = ConfigManager.IssueSubject + Randomiser.GetRandomString(5);
+            string IssueSubj = TestData.IssueSubject + Randomiser.GetRandomString(5);
             Issue issue = new Issue(IssueSubj);
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
             BaseStep.Navmanager.GoToProjectsPage();
             BaseStep.Navmanager.GoToIssuesPage();
-
-            testcase.CreateNewIssue(issue);
+			string issuenum = testcase.CreateNewIssue(issue).GetIssueNumber();
+	        Logger.InitLogger();
+	        Logger.Log.Info("NEW ISSUE NUMBER: " + issuenum);
 			BaseStep.Navmanager.GoToProjectsPage();
 			// Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().Notetext());
-			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().Notetext().Contains(IssueSubj));
+
+			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().GetCreatedIssueNote(issuenum).Text.Contains(IssueSubj));//hide navigation
+			//Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().CountNotes());
 	        //Assert.AreEqual(IssueSubj, BaseStep.Navmanager.GoToActivityPage().Notetext());
 
 			//Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote().Subject);

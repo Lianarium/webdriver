@@ -19,9 +19,9 @@ namespace TestWebProject.Test
     [Parallelizable(ParallelScope.All)]
     public class BaseTest
     {
-        //protected static Browser Browser = Browser.Instance;
-        protected static IBrowser Browser = BrowserFactory.GetBrowser();
-        protected static string projname;
+  
+        protected static IBrowser Browser = BrowserFactory.GetBrowser();//non-static !!! 
+        protected static string Projname;
 	    protected bool IsLoginRequired = true;
          
         [OneTimeSetUp]
@@ -37,13 +37,13 @@ namespace TestWebProject.Test
 	    [SetUp]
 	    public void LogIn()
         { 
-            SetUp.LoginCondition = Convert.ToBoolean(ConfigManager.SetUpLogin);
+           
 		    if (IsLoginRequired)//if we need to log in before performing test
 		    {
-			    User user = new User(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+			    User user = new User(TestData.UserLogin, TestData.UserPassword);
 				CheckLogInSteps step = new CheckLogInSteps();
 		        step.LogIn(user);
-		        projname = ConfigManager.ProjectName + Randomiser.GetRandomString(5);
+		        Projname = TestData.ProjectName + Randomiser.GetRandomString(5);
 	        }
 
       }

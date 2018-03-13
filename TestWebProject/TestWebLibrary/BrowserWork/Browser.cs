@@ -61,9 +61,9 @@ namespace TestWebLibrary.BrowserWork
 	    public static Browser Instance => currentInstance ?? (currentInstance = new Browser());
  
 
-	    public static IWebDriver GetDriver()//wtf
+	   public static IWebDriver GetDriver()//waat 
 	    {
 	        return driver;
-	    }	    
+	    }	  
     }
 }

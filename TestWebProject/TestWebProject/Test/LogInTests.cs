@@ -20,7 +20,7 @@ namespace TestWebProject.Test
 		[Test]
 		public void LogInTest()
 		{
-			User user = new User(ConfigManager.ConfigLogin, ConfigManager.ConfigPassword);
+			User user = new User(TestData.UserLogin, TestData.UserPassword);
 			SetUp.LoginCondition = true;
 			CheckLogInSteps step = new CheckLogInSteps();
 			PageTitle actualTitle = step.LogIn(user).GetTitle();
