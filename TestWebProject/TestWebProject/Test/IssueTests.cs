@@ -21,17 +21,18 @@ namespace TestWebProject.Test
         {
 
             string IssueSubj = TestData.IssueSubject + Randomiser.GetRandomString(5);
-            Issue issue = new Issue(IssueSubj);
+            Issue issue = new Issue(IssueSubj, null);
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
             BaseStep.Navmanager.GoToProjectsPage();
             BaseStep.Navmanager.GoToIssuesPage();
 			string issuenum = testcase.CreateNewIssue(issue).GetIssueNumber();
+            issue.Number = issuenum;
 	        Logger.InitLogger();
-	        Logger.Log.Info("NEW ISSUE NUMBER: " + issuenum);
+	        Logger.Log.Info("NEW ISSUE NUMBER: " + issue.Number);
 			BaseStep.Navmanager.GoToProjectsPage();
 			// Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().Notetext());
 
-			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().GetCreatedIssueNote(issuenum).Text.Contains(IssueSubj));//hide navigation
+			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().GetCreatedIssueNote(issue.Number).Text.Contains(IssueSubj));//hide navigation
 			//Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().CountNotes());
 	        //Assert.AreEqual(IssueSubj, BaseStep.Navmanager.GoToActivityPage().Notetext());
 

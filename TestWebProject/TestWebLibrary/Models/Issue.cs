@@ -10,19 +10,21 @@ namespace TestWebLibrary.Models
 	{
 		 
 
-		public Issue(string val)
+		public Issue(string subjval,string numval)
 		{
-			this.Subject = val;
+			this.Subject = subjval;
+		    this.Number = numval;
 		}
 
 		public string Subject { get; set; }
+	    public string Number { get; set; }
 
-	    public override bool Equals(object obj)
+        public override bool Equals(object obj)
 	    {
 	        if (obj.GetType() != this.GetType()) return false;
 
 	        Issue issue = (Issue)obj;
-	        return (this.Subject == issue.Subject);
+	        return (this.Subject == issue.Subject && this.Number == issue.Number);
 	    }
 
     }
