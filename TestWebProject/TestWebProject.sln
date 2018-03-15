@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebProject", "TestWebPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebLibrary", "TestWebLibrary\TestWebLibrary.csproj", "{30A1AD88-D50D-430B-9A31-C0296607AE1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWork", "APIWork\APIWork.csproj", "{C0660105-BAFE-4150-840E-CACBE56DE799}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{30A1AD88-D50D-430B-9A31-C0296607AE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30A1AD88-D50D-430B-9A31-C0296607AE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30A1AD88-D50D-430B-9A31-C0296607AE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0660105-BAFE-4150-840E-CACBE56DE799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0660105-BAFE-4150-840E-CACBE56DE799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0660105-BAFE-4150-840E-CACBE56DE799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0660105-BAFE-4150-840E-CACBE56DE799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

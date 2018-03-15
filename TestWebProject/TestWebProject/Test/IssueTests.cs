@@ -19,26 +19,23 @@ namespace TestWebProject.Test
         [Test]
         public void NewIssuePresenceTest()
         {
-
+			//arrange
             string IssueSubj = TestData.IssueSubject + Randomiser.GetRandomString(5);
-            Issue issue = new Issue(IssueSubj, null);
+            Issue issue = new Issue(IssueSubj, null);//model of issue to be created
+			Note note = new Note(null);//model of created issue note on activity page
             CreateNewIssueSteps testcase = new CreateNewIssueSteps();
+
+			//act
             BaseStep.Navmanager.GoToProjectsPage();
             BaseStep.Navmanager.GoToIssuesPage();
-			string issuenum = testcase.CreateNewIssue(issue).GetIssueNumber();
-            issue.Number = issuenum;
-	        Logger.InitLogger();
+	        issue.Number = testcase.CreateNewIssue(issue).GetIssueNumber();      
 	        Logger.Log.Info("NEW ISSUE NUMBER: " + issue.Number);
 			BaseStep.Navmanager.GoToProjectsPage();
-			// Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().Notetext());
+	        note = BaseStep.Navmanager.GoToActivityPage().GetCreatedIssueNote(issue.Number);
 
-			Assert.IsTrue(BaseStep.Navmanager.GoToActivityPage().GetCreatedIssueNote(issue.Number).Text.Contains(IssueSubj));//hide navigation
-			//Assert.AreEqual(null, BaseStep.Navmanager.GoToActivityPage().CountNotes());
-	        //Assert.AreEqual(IssueSubj, BaseStep.Navmanager.GoToActivityPage().Notetext());
-
-			//Assert.AreEqual(ConfigManager.ProjectName, testcase.GetIssueNote().Subject);
-
-
+			//assert
+			Assert.IsTrue(note.Text.Contains(IssueSubj)); 
+	
 		}
 /*
         [Test]
