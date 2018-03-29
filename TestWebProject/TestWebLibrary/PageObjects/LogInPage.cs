@@ -38,6 +38,7 @@ namespace TestWebProject
 
 		 public LogInPage FillLoginField(string loginkey)
 		{
+			this.loginfield.WaitForElementIsVisible();
 			this.loginfield.Click();
 			this.loginfield.SendKeys(loginkey);
 			return new LogInPage();
@@ -45,6 +46,7 @@ namespace TestWebProject
 
 		public LogInPage FillPasswordField(string passwordkey)
 		{
+			this.passwordfield.WaitForElementIsVisible();
 			this.passwordfield.Click();
 			this.passwordfield.SendKeys(passwordkey);
 			return new LogInPage();
@@ -52,6 +54,7 @@ namespace TestWebProject
 
 		public HomePage ClickToLogIn()
 		{
+			this.loginbutton.WaitForElementIsVisible();
 			this.loginbutton.Click();
 			return new HomePage();
 		}
